@@ -1,1 +1,1 @@
-https://0-search.github.com/Open-PrinceGeorge
+https://0-search.github.io/Open-PrinceGeorge/
