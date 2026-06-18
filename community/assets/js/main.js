@@ -1,9 +1,3 @@
-/*
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -180,6 +174,29 @@
 					if (event.keyCode == 27)
 						$menu._hide();
 
-			});
+});
+
+	// Tiles: activate when centered on screen (touch devices).
+		if (browser.mobile) {
+
+			var $articles = $('.tiles article');
+
+			$window.on('scroll resize', function() {
+
+				var mid = $window.height() / 2;
+
+				$articles.each(function() {
+
+					var $el = $(this),
+						rect = this.getBoundingClientRect(),
+						active = (rect.top < mid && rect.bottom > mid);
+
+					$el.toggleClass('is-active', active);
+
+				});
+
+			}).triggerHandler('scroll');
+
+		}
 
 })(jQuery);
