@@ -1,0 +1,86 @@
+/* Open Prince George — councillor page additions.
+   Theme colours: #536e7c (slate) and #a3bfd3 (light blue). The vote matrix is
+   red/blue only on the template's own light table styling.
+   --rh = width of the pinned "Motion" column; the focused councillor column is
+   pinned immediately to its right, so the two travel together while the other
+   columns scroll horizontally. */
+
+table.pg-matrix { --rh: 10.5em; }
+
+/* ---- Avatar (reuses template .image frame, just constrains size) --------- */
+.pg-avatar img {
+	width: 160px; height: 160px; object-fit: cover; border-radius: 50%;
+}
+
+/* ---- Election: a single bar for this person ------------------------------ */
+.pg-bar { margin: 0 0 0.6em 0; }
+.pg-bar .pg-bar-label {
+	display: flex; justify-content: space-between;
+	font-size: 0.9em; margin-bottom: 0.3em; font-weight: 600;
+}
+.pg-bar .pg-bar-track { background: rgba(83,110,124,0.15); border-radius: 4px; }
+.pg-bar .pg-bar-fill { display: block; height: 1.6em; background: #536e7c; border-radius: 4px; }
+.pg-bar-caption { font-size: 0.85em; opacity: 0.85; margin: 0; }
+
+/* ---- Vote matrix --------------------------------------------------------- */
+.pg-matrix-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table.pg-matrix { width: 100%; border-collapse: separate; border-spacing: 0; }
+table.pg-matrix th, table.pg-matrix td {
+	text-align: center; padding: 0.6em 0.5em; white-space: nowrap;
+	border-bottom: solid 1px rgba(0,0,0,0.08);
+}
+table.pg-matrix thead th {
+	position: sticky; top: 0; z-index: 3; background: #ffffff;
+	font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.08em;
+}
+
+/* Pinned column 1: the motion name (stays put while columns scroll) */
+table.pg-matrix .pg-row-head {
+	text-align: left; white-space: normal;
+	width: var(--rh); min-width: var(--rh); max-width: var(--rh);
+	position: sticky; left: 0; z-index: 2; background: #ffffff;
+	font-size: 0.85em;
+}
+table.pg-matrix thead .pg-row-head { z-index: 5; }
+table.pg-matrix .pg-row-head strong { font-weight: 600; }
+
+/* Pinned column 2: the focused councillor, parked right after the name column.
+   --focus-left is measured in JS from the real width of the name column so the
+   two butt together exactly (em math alone leaves a sub-pixel seam). */
+table.pg-matrix .pg-focus-col {
+	position: sticky; left: var(--focus-left, var(--rh)); z-index: 1;
+	background: #eef2f4; box-shadow: 2px 0 0 #536e7c;
+}
+table.pg-matrix thead .pg-focus-col { z-index: 4; }
+
+/* Category band: full-width band; the LABEL itself is pinned (sticky on the
+   inner span, not the colspan td — that is reliable across browsers, sticky on
+   a colspan cell is not). */
+table.pg-matrix .pg-cat-row td {
+	text-align: left; background: #eef2f4; padding: 0.5em 0;
+}
+table.pg-matrix .pg-cat-label {
+	position: sticky; left: 0; display: inline-block;
+	padding: 0 0.5em; font-weight: 600; color: #536e7c;
+}
+table.pg-matrix .pg-src { font-size: 0.75em; display: block; opacity: 0.8; }
+
+/* Cells = big red/blue blocks, no borders, no glyphs. */
+.pg-cell { display: inline-block; width: 3.8em; height: 2.7em; border-radius: 7px; vertical-align: middle; }
+.pg-cell.for       { background: #4a90d9; }   /* for (inferred) — clear blue */
+.pg-cell.against   { background: #c0392b; }   /* against (recorded) — red */
+.pg-cell.absent    { background: #dfe4e7; }   /* absent — very light neutral */
+.pg-cell.abstain   { background: #9aa7ae; }   /* abstain — grey */
+.pg-cell.recused   { background: #9aa7ae; }   /* recused — grey */
+
+.pg-legend { list-style: none; padding: 0; margin: 0 0 1em 0; font-size: 0.85em; }
+.pg-legend li { display: inline-block; margin: 0 1.4em 0.4em 0; }
+.pg-legend .pg-cell { width: 1.8em; height: 1.3em; margin-right: 0.5em; }
+
+/* Mobile (~380px): narrower pinned column + smaller blocks */
+@media screen and (max-width: 480px) {
+	table.pg-matrix { --rh: 8em; }
+	table.pg-matrix thead th { font-size: 0.62em; }
+	table.pg-matrix .pg-row-head { font-size: 0.78em; }
+	.pg-cell { width: 2em; height: 1.7em; }
+}

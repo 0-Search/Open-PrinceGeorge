@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Open Prince George — single councillor page.
+	One page serves all 9 people: it reads ?id=<councillor-id> and renders from
+	data/councillors.json + data/votes.json. No per-person HTML files.
+	Reuses the Phantom template (assets/css/main.css); councillor.css adds only
+	the vote-matrix rules the template never had. Must be served over http(s)
+	(not file://) so the JSON can load.
+-->
+<html>
+	<head>
+		<title>Councillor — Open Prince George</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/councillor.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="inner">
+						<a href="index.html" class="logo">
+							<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Open Prince George</span>
+						</a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#council">Your council</a></li>
+						<li><a href="index.html#records">Voting records</a></li>
+						<li><a href="index.html#about">About &amp; method</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+						<div id="pg-placeholder" style="display:none"></div>
+
+						<!-- (1) header: photo + name + role -->
+						<section id="pg-header"><header><h1>Loading&hellip;</h1></header></section>
+
+						<!-- (2) election bar chart -->
+						<section id="pg-bars"></section>
+
+						<!-- (3) vote matrix -->
+						<section id="pg-matrix"></section>
+
+						<ul class="actions">
+							<li><a href="index.html#council" class="button">&larr; Back to council</a></li>
+						</ul>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>About &amp; method</h2>
+							<p>Open Prince George is an independent project. Every contested vote links back to the city's published minutes so you can check the source yourself.</p>
+						</section>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/councillor.js"></script>
+
+	</body>
+</html>

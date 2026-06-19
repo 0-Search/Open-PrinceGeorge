@@ -1,0 +1,46 @@
+{
+  "_note": "PLACEHOLDER DATA. Vote counts below are NOT yet verified against official 2022 City of Prince George results. Replace with real numbers from the city/Elections BC before publishing. Structure is final; numbers are not.",
+  "_placeholder": true,
+
+  "races": {
+    "mayor2022": {
+      "year": 2022,
+      "raceType": "mayor",
+      "candidates": [
+        { "name": "Simon Yu",      "votes": 6000, "elected": true },
+        { "name": "Lyn Hall",      "votes": 5200, "elected": false },
+        { "name": "Other Candidate", "votes": 2100, "elected": false }
+      ]
+    },
+    "council2022": {
+      "year": 2022,
+      "raceType": "council",
+      "seats": 8,
+      "candidates": [
+        { "name": "Kyle Sampson",   "votes": 9000, "elected": true },
+        { "name": "Cori Ramsay",    "votes": 8600, "elected": true },
+        { "name": "Garth Frizzell", "votes": 8200, "elected": true },
+        { "name": "Susan Scott",    "votes": 7800, "elected": true },
+        { "name": "Ron Polillo",    "votes": 7400, "elected": true },
+        { "name": "Brian Skakun",   "votes": 7100, "elected": true },
+        { "name": "Tim Bennett",    "votes": 6900, "elected": true },
+        { "name": "Trudy Klassen",  "votes": 6500, "elected": true },
+        { "name": "Runner Up A",    "votes": 6100, "elected": false },
+        { "name": "Runner Up B",    "votes": 5400, "elected": false },
+        { "name": "Runner Up C",    "votes": 4800, "elected": false }
+      ]
+    }
+  },
+
+  "councillors": [
+    { "id": "simon_yu",       "name": "Simon Yu",       "photo": "images/simon_yu.jpg",       "role": "mayor",      "race": "mayor2022",   "bio": "Mayor of Prince George." },
+    { "id": "tim_bennett",    "name": "Tim Bennett",    "photo": "images/tim_bennet.jpg",     "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "garth_frizzell", "name": "Garth Frizzell", "photo": "images/grath_frizzell.jpg", "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "trudy_klassen",  "name": "Trudy Klassen",  "photo": "images/trudy_klassen.jpg",  "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "ron_polillo",    "name": "Ron Polillo",    "photo": "images/ron_polillo.jpg",    "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "cori_ramsay",    "name": "Cori Ramsay",    "photo": "images/cori_ramsay.jpg",    "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "kyle_sampson",   "name": "Kyle Sampson",   "photo": "images/kyle_sampson.jpg",   "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "susan_scott",    "name": "Susan Scott",    "photo": "images/susan_scott.jpg",    "role": "councillor", "race": "council2022", "bio": "City councillor." },
+    { "id": "brian_skakun",   "name": "Brian Skakun",   "photo": "images/brian_skakun.jpg",   "role": "councillor", "race": "council2022", "bio": "City councillor." }
+  ]
+}

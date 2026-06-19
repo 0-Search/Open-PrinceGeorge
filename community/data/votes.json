@@ -1,0 +1,70 @@
+{
+  "_note": "PLACEHOLDER DATA. Each row must eventually link to real council minutes (source.url + page). Only contested votes belong here: every row must have at least one recorded 'against' or 'absent'. Unanimous votes are excluded by policy.",
+  "_placeholder": true,
+
+  "councillorOrder": [
+    "simon_yu", "tim_bennett", "garth_frizzell", "trudy_klassen",
+    "ron_polillo", "cori_ramsay", "kyle_sampson", "susan_scott", "brian_skakun"
+  ],
+
+  "categories": [
+    { "id": "finance",    "label": "Finance & budget" },
+    { "id": "safety",     "label": "Public safety & downtown" },
+    { "id": "housing",    "label": "Housing & rezoning" },
+    { "id": "governance", "label": "Governance & process" },
+    { "id": "other",      "label": "Other" }
+  ],
+
+  "votes": [
+    {
+      "id": "2023-budget-amendment",
+      "date": "2023-03-13",
+      "category": "finance",
+      "title": "Amend 2023 budget to reduce proposed tax increase",
+      "result": "defeated",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/council-meetings-agendas-minutes", "page": 12 },
+      "attendance": ["simon_yu","tim_bennett","garth_frizzell","trudy_klassen","ron_polillo","cori_ramsay","kyle_sampson","susan_scott","brian_skakun"],
+      "recorded": { "trudy_klassen": "against", "brian_skakun": "against", "ron_polillo": "against" }
+    },
+    {
+      "id": "2023-downtown-safety",
+      "date": "2023-06-26",
+      "category": "safety",
+      "title": "Fund additional downtown safety patrols",
+      "result": "carried",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/council-meetings-agendas-minutes", "page": 8 },
+      "attendance": ["simon_yu","tim_bennett","garth_frizzell","ron_polillo","cori_ramsay","kyle_sampson","susan_scott","brian_skakun"],
+      "recorded": { "trudy_klassen": "absent", "susan_scott": "against" }
+    },
+    {
+      "id": "2023-rezoning-fifth-ave",
+      "date": "2023-09-11",
+      "category": "housing",
+      "title": "Rezone Fifth Avenue parcel for multi-family housing",
+      "result": "carried",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/council-meetings-agendas-minutes", "page": 21 },
+      "attendance": ["simon_yu","tim_bennett","garth_frizzell","trudy_klassen","ron_polillo","cori_ramsay","kyle_sampson","brian_skakun"],
+      "recorded": { "brian_skakun": "against", "ron_polillo": "against", "susan_scott": "absent", "garth_frizzell": "abstain" }
+    },
+    {
+      "id": "2024-procedure-bylaw",
+      "date": "2024-01-29",
+      "category": "governance",
+      "title": "Change council procedure bylaw on delegations",
+      "result": "carried",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/council-meetings-agendas-minutes", "page": 5 },
+      "attendance": ["simon_yu","tim_bennett","garth_frizzell","trudy_klassen","ron_polillo","cori_ramsay","kyle_sampson","susan_scott","brian_skakun"],
+      "recorded": { "brian_skakun": "against", "trudy_klassen": "against" }
+    },
+    {
+      "id": "2024-budget-2025",
+      "date": "2024-12-09",
+      "category": "finance",
+      "title": "Adopt 2025 financial plan",
+      "result": "carried",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/council-meetings-agendas-minutes", "page": 17 },
+      "attendance": ["simon_yu","tim_bennett","garth_frizzell","trudy_klassen","ron_polillo","cori_ramsay","kyle_sampson","susan_scott","brian_skakun"],
+      "recorded": { "trudy_klassen": "against", "brian_skakun": "against" }
+    }
+  ]
+}
