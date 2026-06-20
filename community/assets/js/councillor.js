@@ -107,24 +107,51 @@
 			return '<th class="' + focusCls.trim() + '">' + esc(lastName(byId[id])) + '</th>';
 		}).join('') + '</tr>';
 
-		// Body grouped by category
+		// One motion row. `hidden` marks rows collapsed under "show more".
+		function voteRow(v, catId, hidden) {
+			var src = v.source ? '<a class="pg-src" href="' + esc(v.source.url) + '" target="_blank" rel="noopener">City minutes' + (v.source.page ? ' p.' + esc(v.source.page) : '') + ' ↗</a>' : '';
+			var cls = 'pg-vote-row' + (hidden ? ' pg-extra pg-extra-' + catId : '');
+			var row = '<tr class="' + cls + '"' + (hidden ? ' hidden' : '') + '>' +
+				'<td class="pg-row-head"><strong title="' + esc(v.title) + '">' + esc(v.title) + '</strong>' +
+				'<span class="pg-src">' + esc(v.date) + ' &middot; ' + esc(v.result) + '</span>' + src + '</td>';
+			row += order.map(function(id){ return cell(v, id); }).join('');
+			return row + '</tr>';
+		}
+
+		var PREVIEW = 3; // newest N shown per category; rest collapsed
+
+		// Body grouped by category, each newest-first (date descending)
 		var body = '';
 		votesData.categories.forEach(function(cat) {
 			var rows = votesData.votes.filter(function(v){ return v.category === cat.id; });
 			if (!rows.length) return;
-			body += '<tr class="pg-cat-row"><td colspan="' + (order.length + 1) + '"><span class="pg-cat-label">' + esc(cat.label) + '</span></td></tr>';
-			rows.forEach(function(v) {
-				var src = v.source ? '<a class="pg-src" href="' + esc(v.source.url) + '" target="_blank" rel="noopener">City minutes' + (v.source.page ? ' p.' + esc(v.source.page) : '') + ' ↗</a>' : '';
-				body += '<tr><td class="pg-row-head"><strong>' + esc(v.title) + '</strong>' +
-					'<span class="pg-src">' + esc(v.date) + ' &middot; ' + esc(v.result) + '</span>' + src + '</td>';
-				body += order.map(function(id){ return cell(v, id); }).join('');
-				body += '</tr>';
-			});
+			rows.sort(function(a, b){ return (a.date < b.date ? 1 : a.date > b.date ? -1 : 0); });
+
+			var cid = esc(cat.id), span = order.length + 1;
+			var extra = rows.length - PREVIEW;
+			var showLabel = 'Show ' + extra + ' older' + (extra === 1 ? ' vote' : ' votes') + ' &darr;';
+
+			function btnRow(pos, hidden) {
+				// pos: 'top' shows the expand label (and becomes "Collapse" once open);
+				//      'bottom' is the closing "Collapse" shown only while expanded.
+				var label = pos === 'top' ? showLabel : 'Collapse &uarr;';
+				return '<tr class="pg-toggle-row pg-toggle-' + pos + '-' + cid + '" data-cat="' + cid + '"' + (hidden ? ' hidden' : '') + '>' +
+					'<td colspan="' + span + '">' +
+					'<button type="button" class="pg-toggle" data-cat="' + cid + '" data-show="' + showLabel + '">' + label + '</button>' +
+					'</td></tr>';
+			}
+
+			body += '<tr class="pg-cat-row"><td colspan="' + span + '"><span class="pg-cat-label">' + esc(cat.label) + '</span></td></tr>';
+			rows.forEach(function(v, i) { if (i < PREVIEW) body += voteRow(v, cat.id, false); });
+
+			if (extra > 0) body += btnRow('top', false);          // expand / collapse control
+			rows.forEach(function(v, i) { if (i >= PREVIEW) body += voteRow(v, cat.id, true); });
+			if (extra > 0) body += btnRow('bottom', true);        // closing collapse, hidden until open
 		});
 
 		$root.html(
 			'<h2>Voting record</h2>' +
-			'<p>Contested votes only &mdash; unanimous decisions are left out. Each block is one councillor\'s vote: <strong>red = against</strong>, <strong>blue = for</strong>. A <em>for</em> vote is inferred from the attendance list minus the recorded dissent &mdash; the minutes only name who voted against or was absent.</p>' +
+			'<p>Contested votes only &mdash; unanimous decisions are left out. Each block is one councillor\'s vote: <strong>red = against</strong>, <strong>blue = for</strong>. A <em>for</em> vote is inferred from the attendance list minus the recorded dissent &mdash; the minutes only name who voted against or was absent. Tap a motion title to read it in full.</p>' +
 			'<ul class="pg-legend">' +
 				'<li><span class="pg-cell for"></span>For (inferred)</li>' +
 				'<li><span class="pg-cell against"></span>Against (recorded)</li>' +
@@ -146,36 +173,73 @@
 		}
 		syncFocusOffset();
 		$window.off('resize.pgmatrix load.pgmatrix').on('resize.pgmatrix load.pgmatrix', syncFocusOffset);
+
+		// Expand / collapse a category's older votes. Top button toggles label;
+		// a matching collapse button sits at the bottom while expanded.
+		$table.on('click', '.pg-toggle', function() {
+			var cat = $(this).data('cat');
+			var $top = $table.find('.pg-toggle-top-' + cat + ' .pg-toggle');
+			var expanded = $table.find('.pg-extra-' + cat + ':not([hidden])').length > 0;
+			if (expanded) {
+				$table.find('.pg-extra-' + cat + ', .pg-toggle-bottom-' + cat).attr('hidden', 'hidden');
+				$top.html($top.data('show'));
+				$table.find('.pg-toggle-top-' + cat)[0].scrollIntoView({ block: 'nearest' });
+			} else {
+				$table.find('.pg-extra-' + cat + ', .pg-toggle-bottom-' + cat).removeAttr('hidden');
+				$top.html('Collapse &uarr;');
+			}
+			syncFocusOffset();
+		});
+
+		// Tap a motion title to expand/collapse its full text.
+		$table.on('click', '.pg-row-head strong', function() {
+			$(this).toggleClass('is-open');
+		});
+	}
+
+	// Personal page: avatar + election bar + matrix focused on one councillor.
+	function bootCouncillor(cData, vData) {
+		var id = qs('id');
+		var person = cData.councillors.filter(function(p){ return p.id === id; })[0];
+
+		if (!person) {
+			$('#pg-header').html('<header><h1>Councillor not found</h1>' +
+				'<p>No councillor matches <code>?id=' + esc(id) + '</code>. ' +
+				'<a href="index.html">Back to council</a>.</p></header>');
+			return;
+		}
+
+		document.title = person.name + ' — Open Prince George';
+		renderHeader(person, $('#pg-header'));
+		renderBars(raceFor(person, cData), $('#pg-bars'));
+		renderMatrix(cData.councillors, vData, person.id, $('#pg-matrix'));
+	}
+
+	// Overview page: the same matrix with no focus (mayor first, default order).
+	function bootOverview(cData, vData) {
+		renderMatrix(cData.councillors, vData, null, $('#pg-overview-matrix'));
 	}
 
 	// --- Boot ---------------------------------------------------------------
 	$(function() {
-		var id = qs('id');
+		var $councillor = $('#pg-header');
+		var $overview = $('#pg-overview-matrix');
+		if (!$councillor.length && !$overview.length) return; // matrix not on this page
+
 		$.when(
 			$.getJSON('data/councillors.json'),
 			$.getJSON('data/votes.json')
 		).done(function(cRes, vRes) {
 			var cData = cRes[0], vData = vRes[0];
-			var person = cData.councillors.filter(function(p){ return p.id === id; })[0];
 
-			if (!person) {
-				$('#pg-header').html('<header><h1>Councillor not found</h1>' +
-					'<p>No councillor matches <code>?id=' + esc(id) + '</code>. ' +
-					'<a href="index.html">Back to council</a>.</p></header>');
-				return;
-			}
-
-			document.title = person.name + ' — Open Prince George';
 			if (cData._placeholder || vData._placeholder) {
 				$('#pg-placeholder').html('<p><strong>Note:</strong> these figures are placeholder data and not yet verified against official sources.</p>').show();
 			}
-
-			renderHeader(person, $('#pg-header'));
-			renderBars(raceFor(person, cData), $('#pg-bars'));
-			renderMatrix(cData.councillors, vData, person.id, $('#pg-matrix'));
+			if ($councillor.length) bootCouncillor(cData, vData);
+			if ($overview.length) bootOverview(cData, vData);
 		}).fail(function() {
-			$('#pg-header').html('<header><h1>Could not load data</h1>' +
-				'<p>If you opened this file directly, run it from a local server so the JSON files can load.</p></header>');
+			var msg = '<p>Could not load voting data. If you opened this file directly, run it from a local server so the JSON files can load.</p>';
+			($councillor.length ? $('#pg-header') : $overview).html(msg);
 		});
 	});
 

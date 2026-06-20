@@ -42,7 +42,25 @@ table.pg-matrix .pg-row-head {
 	font-size: 0.85em;
 }
 table.pg-matrix thead .pg-row-head { z-index: 5; }
-table.pg-matrix .pg-row-head strong { font-weight: 600; }
+/* Motion titles clamp to 2 lines; click/tap the title to read it in full. */
+table.pg-matrix .pg-row-head strong {
+	display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+	overflow: hidden; font-weight: 600; cursor: pointer;
+}
+table.pg-matrix .pg-row-head strong.is-open {
+	display: block; -webkit-line-clamp: unset; overflow: visible;
+}
+
+/* "Show older / collapse" toggle — solid theme-colour button.
+   !important overrides the template's `button { color:#585858 !important }`. */
+table.pg-matrix .pg-toggle-row td { text-align: left; padding: 0.5em 0.5em; }
+.pg-toggle {
+	display: inline-block; cursor: pointer; border: 0; border-radius: 4px;
+	background: #536e7c !important; color: #fff !important; box-shadow: none !important;
+	height: auto; line-height: 1; padding: 0.7em 1.4em;
+	font-size: 0.7em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.pg-toggle:hover { background: #3f5560 !important; color: #fff !important; }
 
 /* Pinned column 2: the focused councillor, parked right after the name column.
    --focus-left is measured in JS from the real width of the name column so the

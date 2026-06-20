@@ -13,6 +13,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/councillor.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -153,26 +154,9 @@
 							<!-- Voting records -->
 							<section id="records">
 								<h2>Voting records</h2>
-								<p>What they did, not what they said. Every vote here links straight back to the city's own published minutes, so you can check the source yourself.</p>
-								<div class="table-wrapper">
-									<table class="alt">
-										<thead>
-											<tr>
-												<th>Date</th>
-												<th>Motion</th>
-												<th>Result</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>&mdash;</td>
-												<td>Sample row &mdash; real records to be loaded from council minutes</td>
-												<td>&mdash;</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<p>Full searchable records are in progress.</p>
+								<p>What they did, not what they said. Every vote here links straight back to the city's own published minutes, so you can check the source yourself. Tap any name above to focus the matrix on one councillor.</p>
+								<div id="pg-placeholder" style="display:none"></div>
+								<div id="pg-overview-matrix"></div>
 							</section>
 
 							<!-- Issue match -->
@@ -236,6 +220,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/councillor.js"></script>
 
 		<!-- Countdown: only updates text, adds no styling -->
 			<script>
