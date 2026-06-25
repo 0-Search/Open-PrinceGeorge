@@ -72,8 +72,10 @@
 	}
 
 	// --- Component 3: vote matrix ------------------------------------------
-	// Reused by overview + personal page; focusedId pins/highlights one column.
-	function renderMatrix(councillors, votesData, focusedId, $root) {
+	// Reused by overview + personal page + hearings; focusedId pins/highlights one
+	// column. opts.heading / opts.intro override the default title and blurb.
+	function renderMatrix(councillors, votesData, focusedId, $root, opts) {
+		opts = opts || {};
 		var byId = {}; councillors.forEach(function(p){ byId[p.id] = p; });
 
 		// Column order: focused first, then default (mayor, then fixed order).
@@ -118,7 +120,7 @@
 			return row + '</tr>';
 		}
 
-		var PREVIEW = 3; // newest N shown per category; rest collapsed
+		var PREVIEW = opts.noCollapse ? Infinity : 3; // newest N shown per category; rest collapsed
 
 		// Body grouped by category, each newest-first (date descending)
 		var body = '';
@@ -149,9 +151,12 @@
 			if (extra > 0) body += btnRow('bottom', true);        // closing collapse, hidden until open
 		});
 
+		var heading = opts.heading != null ? opts.heading : 'Voting record';
+		var intro = opts.intro != null ? opts.intro : 'Contested votes only &mdash; unanimous decisions are left out. Each block is one councillor\'s vote: <strong>red = against</strong>, <strong>blue = for</strong>. A <em>for</em> vote is inferred from the attendance list minus the recorded dissent &mdash; the minutes only name who voted against or was absent. Tap a motion title to read it in full.';
+
 		$root.html(
-			'<h2>Voting record</h2>' +
-			'<p>Contested votes only &mdash; unanimous decisions are left out. Each block is one councillor\'s vote: <strong>red = against</strong>, <strong>blue = for</strong>. A <em>for</em> vote is inferred from the attendance list minus the recorded dissent &mdash; the minutes only name who voted against or was absent. Tap a motion title to read it in full.</p>' +
+			(heading ? '<h2>' + heading + '</h2>' : '') +
+			(intro ? '<p>' + intro + '</p>' : '') +
 			'<ul class="pg-legend">' +
 				'<li><span class="pg-cell for"></span>For (inferred)</li>' +
 				'<li><span class="pg-cell against"></span>Against (recorded)</li>' +
@@ -242,5 +247,10 @@
 			($councillor.length ? $('#pg-header') : $overview).html(msg);
 		});
 	});
+
+	// Expose the matrix renderer so hearings.js can reuse the exact same
+	// red/blue vote grid for public-hearing votes.
+	window.OPG = window.OPG || {};
+	window.OPG.renderMatrix = renderMatrix;
 
 })(jQuery);

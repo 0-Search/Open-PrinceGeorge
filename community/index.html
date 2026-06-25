@@ -43,6 +43,7 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
+							<li><a href="#hearings">Public hearings</a></li>
 							<li><a href="#council">Your council</a></li>
 							<li><a href="#election">2026 election</a></li>
 							<li><a href="#records">Voting records</a></li>
@@ -55,20 +56,42 @@
 					<div id="main">
 						<div class="inner">
 
-							<!-- Page intro (the "hero": the top headline + tagline) -->
-							<header>
-								<h1>Open Prince George</h1>
-								<p>Local politics without the homework. See who sits on council, how they vote, and how to have your say &mdash; before the October 17, 2026 municipal election.</p>
-							</header>
+							<!-- Hero: aerial of Prince George with the headline overlaid.
+							     Replaces the old button directory (navigation lives in the
+							     right-hand menu). Image: images/bg03.jpg -->
+							<section class="pg-hero">
+								<div class="pg-hero-text">
+									<h1>Open Prince George</h1>
+									<p>Local politics without the homework. See who sits on council, how they vote, and how to have your say &mdash; before the October 17, 2026 municipal election.</p>
+									<ul class="actions">
+										<li><a href="#hearings" class="button primary">Have your say &rarr;</a></li>
+									</ul>
+								</div>
+							</section>
 
-							<!-- Directory: full-width "fit" bars from elements.html -->
-							<ul class="actions stacked">
-								<li><a href="#council" class="button fit">Your council</a></li>
-								<li><a href="#election" class="button primary fit">2026 election</a></li>
-								<li><a href="#records" class="button fit">Voting records</a></li>
-								<li><a href="#match" class="button fit">Issue match</a></li>
-								<li><a href="#about" class="button fit">About &amp; method</a></li>
-							</ul>
+							<!-- Public hearings: THE most important section, so it goes first.
+							     Upcoming cards come from data/hearings.json (hand-maintained);
+							     the past archive is derived from the voting record. -->
+							<section id="hearings">
+								<h2>Upcoming public hearings</h2>
+								<p>A public hearing is your formal chance to tell council what you think <em>before</em> they vote &mdash; on rezonings and Official Community Plan changes that affect what gets built in your neighbourhood. You don't need to register: you just show up (in person, by Zoom, or by phone) and speak when the Chair calls for the public, or send a written comment beforehand.</p>
+								<div id="pg-hearings-upcoming"><p>Loading&hellip;</p></div>
+
+								<h3>Why it matters &amp; how to speak</h3>
+								<p>Council <em>must</em> hold a public hearing before changing zoning or the Official Community Plan. They have to listen to everyone who shows up before they decide &mdash; so a few minutes from you genuinely counts, especially since most hearings draw only a handful of people.</p>
+								<ul>
+									<li><strong>In person:</strong> Council Chambers, 2nd Floor, City Hall, 1100 Patricia Blvd. Be there when the Chair invites public comments.</li>
+									<li><strong>By Zoom:</strong> join the meeting (ID <strong>848 2979 7394</strong>) and use &ldquo;Raise Hand&rdquo; when the Chair calls for the public.</li>
+									<li><strong>By phone:</strong> dial <strong>1.778.907.2071</strong>, enter the meeting ID, and press <strong>*9</strong> to ask to speak.</li>
+									<li><strong>In writing:</strong> email <a href="mailto:cityclerk@princegeorge.ca">cityclerk@princegeorge.ca</a> (or use the City's online form) <strong>before 12:00&nbsp;p.m. on the day of the hearing</strong>. Written comments become part of the public record.</li>
+									<li><strong>Time to speak:</strong> up to 10 minutes the first time, 5 minutes if you speak again. Give your name and address for the record.</li>
+								</ul>
+								<p class="pg-src">Source: City of Prince George &mdash; <a href="https://www.princegeorge.ca/city-hall/mayor-council/participate-council-meetings" target="_blank" rel="noopener">Participate in Council Meetings ↗</a></p>
+
+								<h3>Past hearings</h3>
+								<p>Rezonings and OCP changes this council has already heard, newest first. Pulled from the voting record &mdash; every entry links back to the city's minutes.</p>
+								<div id="pg-hearings-past-preview"><p>Loading&hellip;</p></div>
+							</section>
 
 							<!-- Council: tiles, exactly like index.html (mayor + 8 councillors) -->
 							<section id="council">
@@ -221,6 +244,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/councillor.js"></script>
+			<script src="assets/js/hearings.js"></script>
 
 		<!-- Countdown: only updates text, adds no styling -->
 			<script>

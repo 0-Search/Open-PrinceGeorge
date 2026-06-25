@@ -7,6 +7,56 @@
 
 table.pg-matrix { --rh: 10.5em; }
 
+/* ---- Hero banner (aerial of Prince George) ------------------------------- */
+.pg-hero {
+	position: relative; overflow: hidden; border-radius: 6px;
+	margin: 0 0 2.5em 0; min-height: 380px;
+	display: flex; align-items: flex-end;
+	background: #1b2a33 url("../../images/bg03.jpg") center 35% / cover no-repeat;
+}
+.pg-hero::before {
+	content: ''; position: absolute; inset: 0;
+	background: linear-gradient(to top, rgba(20,32,40,0.92) 0%, rgba(20,32,40,0.5) 45%, rgba(20,32,40,0.1) 100%);
+}
+.pg-hero .pg-hero-text { position: relative; padding: 2.5em; max-width: 38em; }
+.pg-hero h1 { color: #fff; margin: 0 0 0.4em 0; line-height: 1.1; }
+.pg-hero p { color: rgba(255,255,255,0.92); margin: 0 0 1.2em 0; }
+.pg-hero .actions { margin: 0; }
+
+@media screen and (max-width: 736px) {
+	.pg-hero { min-height: 300px; }
+	.pg-hero .pg-hero-text { padding: 1.5em; }
+}
+
+/* ---- Public hearings ----------------------------------------------------- */
+.pg-hearing-card {
+	border: solid 1px rgba(83,110,124,0.25); border-left: 5px solid #536e7c;
+	border-radius: 5px; padding: 1.25em 1.5em; margin: 0 0 1.25em 0;
+}
+.pg-hearing-card h3 { margin: 0.1em 0 0.3em 0; }
+.pg-hearing-date {
+	font-size: 0.75em; font-weight: 700; letter-spacing: 0.12em;
+	text-transform: uppercase; color: #536e7c;
+}
+.pg-hearing-type { font-size: 0.85em; opacity: 0.8; margin: 0 0 0.6em 0; }
+.pg-hearing-meta { list-style: none; padding: 0; margin: 0.5em 0; font-size: 0.9em; }
+.pg-hearing-meta li { margin: 0 0 0.35em 0; }
+.pg-hearing-none {
+	border: dashed 1px rgba(83,110,124,0.4); border-radius: 5px;
+	padding: 1.25em 1.5em; color: #555;
+}
+
+.pg-past-list { list-style: none; padding: 0; margin: 0 0 1em 0; }
+.pg-past-item {
+	display: flex; flex-wrap: wrap; gap: 0.25em 1em; align-items: baseline;
+	padding: 0.6em 0; border-bottom: solid 1px rgba(0,0,0,0.08);
+}
+.pg-past-when { font-size: 0.8em; color: #536e7c; font-weight: 600; min-width: 8em; }
+.pg-past-name { flex: 1; min-width: 12em; }
+.pg-past-src { font-size: 0.8em; }
+
+.pg-src { font-size: 0.8em; opacity: 0.85; }
+
 /* ---- Avatar (reuses template .image frame, just constrains size) --------- */
 .pg-avatar img {
 	width: 160px; height: 160px; object-fit: cover; border-radius: 50%;

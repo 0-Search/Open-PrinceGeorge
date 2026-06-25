@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Open Prince George — past public hearings archive.
+	The full list of rezoning / OCP hearings this council has heard, derived from
+	the voting record (data/votes.json) by assets/js/hearings.js. Must be served
+	over http(s) so the JSON can load.
+-->
+<html>
+	<head>
+		<title>Past public hearings — Open Prince George</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/councillor.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="inner">
+						<a href="index.html" class="logo">
+							<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Open Prince George</span>
+						</a>
+						<nav>
+							<ul>
+								<li><a href="#menu">Menu</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<h2>Menu</h2>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html#hearings">Upcoming hearings</a></li>
+						<li><a href="index.html#records">Voting records</a></li>
+						<li><a href="index.html#about">About &amp; method</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+						<header>
+							<h1>Past public hearings</h1>
+							<p>Every rezoning and Official Community Plan change this council has heard, newest first. Derived from the council voting record &mdash; each entry links back to the city's own minutes. This is a heuristic archive built from the minutes, not an official list.</p>
+						</header>
+
+						<div id="pg-hearings-archive"><p>Loading&hellip;</p></div>
+
+						<ul class="actions">
+							<li><a href="index.html#hearings" class="button">&larr; Back to upcoming hearings</a></li>
+						</ul>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>About &amp; method</h2>
+							<p>Open Prince George is an independent project. Public hearings shown here are inferred from rezoning and OCP items in the council minutes; always confirm details against the city's official record.</p>
+						</section>
+					</div>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/councillor.js"></script>
+			<script src="assets/js/hearings.js"></script>
+
+	</body>
+</html>

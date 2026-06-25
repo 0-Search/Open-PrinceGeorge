@@ -1,0 +1,19 @@
+{
+  "_note": "UPCOMING public hearings only — hand-maintained. Source: the 'Upcoming Public Hearings' table at https://www.princegeorge.ca/city-hall/mayor-council/meetings-agendas-minutes (notices published ~5 days ahead, also on the City's Facebook and the City Hall bulletin board). Past hearings are derived automatically from votes.json, not listed here. When the City lists none, leave `upcoming` empty — the page shows a friendly 'none scheduled' state.",
+  "_placeholder": true,
+
+  "upcoming": [
+    {
+      "id": "example-rezoning-2026",
+      "date": "2026-07-13",
+      "time": "7:00 p.m.",
+      "title": "Rezoning at 1234 Example Street",
+      "plain": "A developer wants to change the rules on this lot so they can build a 4-storey apartment instead of single houses. If you live nearby, this affects traffic, parking, and what gets built next to you.",
+      "type": "Rezoning (Zoning Bylaw amendment)",
+      "location": "Council Chambers, 2nd Floor, City Hall, 1100 Patricia Blvd",
+      "online": { "zoomMeetingId": "848 2979 7394", "phone": "1.778.907.2071" },
+      "commentDeadline": "12:00 p.m. on the day of the hearing",
+      "source": { "url": "https://www.princegeorge.ca/city-hall/mayor-council/meetings-agendas-minutes", "label": "City public hearing notice" }
+    }
+  ]
+}
