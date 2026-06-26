@@ -46,14 +46,43 @@ table.pg-matrix { --rh: 10.5em; }
 	padding: 1.25em 1.5em; color: #555;
 }
 
-.pg-past-list { list-style: none; padding: 0; margin: 0 0 1em 0; }
-.pg-past-item {
-	display: flex; flex-wrap: wrap; gap: 0.25em 1em; align-items: baseline;
-	padding: 0.6em 0; border-bottom: solid 1px rgba(0,0,0,0.08);
+/* Compact per-hearing result bar (replaces the wide matrix here) */
+.pg-hbar-legend { font-size: 0.85em; margin: 0 0 1.2em 0; }
+.pg-hbar-legend .pg-seg { display: inline-block; width: 1.2em; height: 0.9em; border-radius: 2px; vertical-align: middle; margin-right: 0.2em; }
+.pg-hbar-legend small { opacity: 0.75; }
+
+.pg-hbar-row { padding: 0.7em 0; border-bottom: solid 1px rgba(0,0,0,0.08); }
+.pg-hbar-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.2em 1em; margin-bottom: 0.4em; }
+.pg-hbar-title { font-weight: 600; }
+.pg-hbar-meta { font-size: 0.8em; color: #536e7c; white-space: nowrap; }
+.pg-hbar-ref { font-size: 0.8em; opacity: 0.85; margin: 0 0 0.4em 0; }
+.pg-hbar-plain { font-style: italic; opacity: 0.7; }
+
+.pg-hbar { display: flex; height: 1.8em; border-radius: 4px; overflow: visible; }
+.pg-hbar .pg-seg {
+	position: relative; min-width: 1.8em; cursor: pointer;
+	display: flex; align-items: center; justify-content: center;
+	color: #fff; font-size: 0.75em; font-weight: 700;
 }
-.pg-past-when { font-size: 0.8em; color: #536e7c; font-weight: 600; min-width: 8em; }
-.pg-past-name { flex: 1; min-width: 12em; }
-.pg-past-src { font-size: 0.8em; }
+.pg-hbar .pg-seg:first-child { border-radius: 4px 0 0 4px; }
+.pg-hbar .pg-seg:last-child { border-radius: 0 4px 4px 0; }
+.pg-seg.for { background: #4a90d9; }
+.pg-seg.against { background: #c0392b; }
+.pg-seg.absent { background: #dfe4e7; color: #555; }
+.pg-seg.abstain, .pg-seg.recused { background: #9aa7ae; }
+
+/* hover/focus popover listing the councillors in that segment */
+.pg-seg-pop {
+	display: none; position: absolute; bottom: 100%; left: 0; z-index: 20;
+	min-width: 12em; background: #fff; color: #585858;
+	border: solid 1px rgba(0,0,0,0.15); border-radius: 5px;
+	box-shadow: 0 4px 14px rgba(0,0,0,0.18); padding: 0.5em 0.75em; margin-bottom: 4px;
+}
+.pg-seg:hover .pg-seg-pop, .pg-seg:focus .pg-seg-pop, .pg-seg:focus-within .pg-seg-pop { display: block; }
+.pg-seg-pop-h { font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.1em; color: #536e7c; font-weight: 700; margin-bottom: 0.3em; }
+.pg-seg-pop ul { list-style: none; margin: 0; padding: 0; }
+.pg-seg-pop li { margin: 0; }
+.pg-seg-pop a { display: block; padding: 0.15em 0; font-size: 0.9em; }
 
 .pg-src { font-size: 0.8em; opacity: 0.85; }
 

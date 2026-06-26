@@ -248,9 +248,4 @@
 		});
 	});
 
-	// Expose the matrix renderer so hearings.js can reuse the exact same
-	// red/blue vote grid for public-hearing votes.
-	window.OPG = window.OPG || {};
-	window.OPG.renderMatrix = renderMatrix;
-
 })(jQuery);

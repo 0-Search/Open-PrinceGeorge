@@ -69,38 +69,97 @@
 		$root.html(up.map(upcomingCard).join(''));
 	}
 
-	// Render past hearings as the SAME red/blue vote matrix used elsewhere: one
-	// row per hearing (its final recorded reading), 9 councillor columns showing
-	// who voted for/against the rezoning or OCP change.
-	function renderPast(cData, vData, $root, limit) {
-		if (!window.OPG || !window.OPG.renderMatrix) {
-			$root.html('<p>Voting matrix unavailable (councillor.js did not load).</p>');
-			return;
+	// For one hearing's decisive reading, group councillors by how they voted.
+	// recorded against/absent/abstain/recused are explicit; everyone else who
+	// was in attendance is inferred 'for'.
+	var SEG_ORDER = ['for', 'against', 'abstain', 'recused', 'absent'];
+	var SEG_LABEL = { for: 'For', against: 'Against', abstain: 'Abstained', recused: 'Recused', absent: 'Absent' };
+
+	function tallyVote(vote, order) {
+		var groups = { for: [], against: [], abstain: [], recused: [], absent: [] };
+		order.forEach(function(id) {
+			var state = vote.recorded[id];
+			if (!state) state = vote.attendance.indexOf(id) !== -1 ? 'for' : null;
+			if (state && groups[state]) groups[state].push(id);
+		});
+		return groups;
+	}
+
+	// Pull a readable type + amendment-bylaw number out of the raw bylaw name.
+	function hearingMeta(name) {
+		var ocp = /Official Community Plan/i.test(name);
+		var m = name.match(/Amendment Bylaw No\.?\s*(\d+)(?:,?\s*(\d{4}))?/i);
+		return { type: ocp ? 'OCP amendment' : 'Rezoning', no: m ? m[1] : null, year: m && m[2] ? m[2] : null };
+	}
+
+	// A single compact result bar per hearing. Segments are sized by vote share;
+	// hovering/tapping a segment reveals the councillors in it (each a link to
+	// their page). `labels` adds a plain-language description when available.
+	function hearingBar(g, order, byId, labels) {
+		var groups = tallyVote(g.latest, order);
+		var total = order.reduce(function(n, id) {
+			var s = g.latest.recorded[id] || (g.latest.attendance.indexOf(id) !== -1 ? 'for' : null);
+			return n + (s ? 1 : 0);
+		}, 0) || 1;
+
+		var segs = SEG_ORDER.filter(function(k){ return groups[k].length; }).map(function(k) {
+			var ids = groups[k];
+			var names = ids.map(function(id) {
+				var p = byId[id] || { name: id };
+				return '<li><a href="councillor.html?id=' + esc(id) + '">' + esc(p.name) + '</a></li>';
+			}).join('');
+			return '<div class="pg-seg ' + k + '" style="flex-grow:' + ids.length + '" tabindex="0" ' +
+				'aria-label="' + esc(SEG_LABEL[k]) + ': ' + ids.length + '">' +
+				'<span class="pg-seg-n">' + ids.length + '</span>' +
+				'<div class="pg-seg-pop"><div class="pg-seg-pop-h">' + esc(SEG_LABEL[k]) + '</div><ul>' + names + '</ul></div>' +
+				'</div>';
+		}).join('');
+
+		var when = g.firstDate === g.latest.date ? esc(g.latest.date)
+			: esc(g.firstDate) + ' – ' + esc(g.latest.date);
+		var src = g.latest.source ? ' &middot; <a class="pg-src" href="' + esc(g.latest.source.url) + '" target="_blank" rel="noopener">minutes' +
+			(g.latest.source.page ? ' p.' + esc(g.latest.source.page) : '') + ' ↗</a>' : '';
+
+		// Plain-language label when we have one; otherwise a cleaned reference.
+		var meta = hearingMeta(g.name);
+		var label = labels && meta.no ? labels[meta.no] : null;
+		var title, ref;
+		if (label && label.what) {
+			title = (label.address ? esc(label.address) + ' — ' : '') + esc(label.what);
+			ref = esc(label.type || meta.type) + (meta.no ? ' &middot; Bylaw ' + esc(meta.no) : '') + (meta.year ? ' (' + esc(meta.year) + ')' : '');
+		} else {
+			title = esc(meta.type) + (meta.no ? ' &middot; Bylaw ' + esc(meta.no) : '') + (meta.year ? ' (' + esc(meta.year) + ')' : '');
+			ref = '<span class="pg-hbar-plain">Plain summary not added yet &mdash; see the minutes for what & where.</span>';
 		}
+
+		return '<div class="pg-hbar-row">' +
+			'<div class="pg-hbar-head"><span class="pg-hbar-title" title="' + esc(g.name) + '">' + title + '</span>' +
+			'<span class="pg-hbar-meta">' + when + ' &middot; ' + esc(g.latest.result) + src + '</span></div>' +
+			'<div class="pg-hbar-ref">' + ref + '</div>' +
+			'<div class="pg-hbar">' + segs + '</div>' +
+			'</div>';
+	}
+
+	function renderPast(cData, vData, labels, $root, limit) {
+		var order = vData.councillorOrder;
+		var byId = {};
+		cData.councillors.forEach(function(p){ byId[p.id] = p; });
+		labels = (labels && labels.labels) || {};
+
 		var list = derivePastHearings(vData.votes);
 		var shown = limit ? list.slice(0, limit) : list;
 
-		// One synthetic vote per hearing = its latest reading, relabelled with
-		// the clean bylaw name and dropped into a single "hearings" category.
-		var synthVotes = shown.map(function(g) {
-			return $.extend({}, g.latest, { title: g.name, category: 'hearings' });
-		});
-		var votesData = {
-			councillorOrder: vData.councillorOrder,
-			categories: [{ id: 'hearings', label: 'Public hearings' }],
-			votes: synthVotes
-		};
-
-		$root.empty();
-		var $matrix = $('<div></div>').appendTo($root);
-		window.OPG.renderMatrix(cData.councillors, votesData, null, $matrix, {
-			heading: '',
-			intro: 'How every councillor voted on each rezoning / OCP change &mdash; final recorded reading, newest first. <strong>Red = against</strong>, <strong>blue = for</strong> (inferred from the attendance list minus recorded dissent). Tap a title for the full bylaw name; each links to the city minutes.',
-			noCollapse: true
-		});
+		var html = '<p class="pg-hbar-legend">' +
+			'<span class="pg-seg for"></span> For &nbsp; ' +
+			'<span class="pg-seg against"></span> Against &nbsp; ' +
+			'<span class="pg-seg absent"></span> Absent &nbsp; ' +
+			'<span class="pg-seg abstain"></span> Abstain / recused' +
+			'<br><small>Bar shows the final reading. Hover or tap a colour to see who &mdash; and open their page.</small></p>';
+		html += '<div class="pg-hbars">' + shown.map(function(g){ return hearingBar(g, order, byId, labels); }).join('') + '</div>';
 		if (limit && list.length > limit) {
-			$root.append('<ul class="actions"><li><a href="hearings.html" class="button">Browse all ' + list.length + ' past hearings &rarr;</a></li></ul>');
+			html += '<ul class="actions"><li><a href="hearings.html" class="button">Browse all ' + list.length + ' past hearings &rarr;</a></li></ul>';
 		}
+		$root.html(html);
 	}
 
 	// --- Boot ---------------------------------------------------------------
@@ -113,18 +172,27 @@
 		var needHearings = $upcoming.length;
 		var needVotes = $pastPreview.length || $archive.length;
 
+		// Always-resolving fetch so an optional/missing file never blocks the rest.
+		function optional(url) {
+			var d = $.Deferred();
+			$.getJSON(url).done(function(r){ d.resolve(r); }).fail(function(){ d.resolve(null); });
+			return d;
+		}
+
 		var reqs = [];
 		reqs.push(needHearings ? $.getJSON('data/hearings.json') : $.Deferred().resolve(null));
 		reqs.push(needVotes ? $.getJSON('data/votes.json') : $.Deferred().resolve(null));
 		reqs.push(needVotes ? $.getJSON('data/councillors.json') : $.Deferred().resolve(null));
+		reqs.push(needVotes ? optional('data/hearing-labels.json') : $.Deferred().resolve(null));
 
-		$.when.apply($, reqs).done(function(hRes, vRes, cRes) {
+		$.when.apply($, reqs).done(function(hRes, vRes, cRes, lRes) {
 			var hData = needHearings ? (hRes[0] || hRes) : null;
 			var vData = needVotes ? (vRes[0] || vRes) : null;
 			var cData = needVotes ? (cRes[0] || cRes) : null;
+			var labels = needVotes ? (lRes && (lRes[0] !== undefined ? lRes[0] : lRes)) : null;
 			if ($upcoming.length) renderUpcoming(hData, $upcoming);
-			if ($pastPreview.length && vData && cData) renderPast(cData, vData, $pastPreview, 6);
-			if ($archive.length && vData && cData) renderPast(cData, vData, $archive, 0);
+			if ($pastPreview.length && vData && cData) renderPast(cData, vData, labels, $pastPreview, 6);
+			if ($archive.length && vData && cData) renderPast(cData, vData, labels, $archive, 0);
 		}).fail(function() {
 			var msg = '<p>Could not load hearings data. If you opened this file directly, run it from a local server.</p>';
 			($upcoming.length ? $upcoming : ($archive.length ? $archive : $pastPreview)).html(msg);

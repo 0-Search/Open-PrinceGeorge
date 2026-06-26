@@ -1,0 +1,11 @@
+{
+  "_note": "Plain-language labels for past public hearings, keyed by the Amendment Bylaw number (the number after 'Amendment Bylaw No.'). The site shows `what` (and `address`) instead of the raw bylaw reference when a label exists; otherwise it falls back to a cleaned 'Rezoning / OCP amendment · Bylaw NNNN' line. You DON'T need to fill them all — do the recent or notable ones first. Get the address + what's being allowed from the council report/minutes PDF for that bylaw.",
+
+  "labels": {
+    "9342": {
+      "type": "Rezoning",
+      "address": "EXAMPLE — replace me: 1234 5th Ave",
+      "what": "EXAMPLE — replace me: lets a developer build a 4-storey apartment where only single houses were allowed."
+    }
+  }
+}
