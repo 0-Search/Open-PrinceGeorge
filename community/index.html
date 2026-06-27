@@ -69,16 +69,26 @@
 								</div>
 							</section>
 
+							<!-- Issue match: sits right under the hero so a plain (image-free)
+							     section separates the hero image from the first banner image. -->
+							<section id="match">
+								<h2>Find your match</h2>
+								<p>Answer a few quick questions about issues council has actually voted on, and see which councillors tend to vote the way you think.</p>
+								<ul class="actions">
+									<li><a href="match.html" class="button primary">Start the questions &rarr;</a></li>
+								</ul>
+							</section>
+
 							<!-- Public hearings: THE most important section, so it goes first.
 							     Homepage shows only the banner + upcoming cards; the how-to-speak
 							     guide and the past-hearings archive live on hearings.html. -->
 							<section id="hearings">
-								<div class="pg-banner hearings">
+								<a class="pg-banner hearings" href="hearings.html">
 									<div class="pg-banner-text">
 										<h2>Public hearings</h2>
 										<p>Your formal chance to tell council what you think &mdash; before they vote on what gets built in your neighbourhood.</p>
 									</div>
-								</div>
+								</a>
 								<div id="pg-hearings-upcoming"><p>Loading&hellip;</p></div>
 								<ul class="actions">
 									<li><a href="hearings.html" class="button">Past hearings &amp; how to speak &rarr;</a></li>
@@ -87,14 +97,14 @@
 
 							<!-- Council: banner + tiles (mayor + 8 councillors) -->
 							<section id="council">
-								<div class="pg-banner council">
+								<a class="pg-banner council" href="#council-tiles">
 									<div class="pg-banner-text">
 										<h2>Your council</h2>
 										<p>One mayor and eight councillors. Tap any name for their role, contact details, and voting record.</p>
 									</div>
-								</div>
+								</a>
 							</section>
-							<section class="tiles">
+							<section id="council-tiles" class="tiles">
 								<article class="style1">
 									<span class="image"><img src="images/simon_yu.jpg" alt="" /></span>
 									<a href="councillor.html?id=simon_yu">
@@ -162,15 +172,15 @@
 
 							<!-- Election -->
 							<section id="election">
-								<div class="pg-banner election">
+								<a class="pg-banner election" href="vote.html">
 									<div class="pg-banner-text">
 										<h2>2026 municipal election</h2>
 										<p><strong id="pg-countdown">Loading&hellip;</strong> until voting day &mdash; Saturday, October 17, 2026.</p>
 									</div>
-								</div>
+								</a>
 								<ul class="actions">
-									<li><a href="generic.html" class="button">How to vote</a></li>
-									<li><a href="generic.html" class="button">Am I registered?</a></li>
+									<li><a href="vote.html" class="button">How to vote</a></li>
+									<li><a href="vote.html#can-i-vote" class="button">Am I eligible?</a></li>
 								</ul>
 							</section>
 
@@ -178,17 +188,8 @@
 							<section id="records">
 								<h2>Voting records</h2>
 								<p>What they did, not what they said &mdash; every vote links back to the city's own minutes. Tap any name above to focus on one councillor.</p>
-								<div id="pg-placeholder" style="display:none"></div>
+								<div id="pg-placeholder" class="is-hidden"></div>
 								<div id="pg-overview-matrix"></div>
-							</section>
-
-							<!-- Issue match -->
-							<section id="match">
-								<h2>Issue match</h2>
-								<p>Answer a few quick questions and see which councillors tend to vote the way you think.</p>
-								<ul class="actions">
-									<li><a href="generic.html" class="button primary">Start the questions</a></li>
-								</ul>
 							</section>
 
 							<!-- About & method -->

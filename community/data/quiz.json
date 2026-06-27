@@ -1,0 +1,102 @@
+{
+  "_note": "Issue Match questions. Each question is tied to a REAL recorded council vote in votes.json via voteId. `agreeIs` says which side an 'Agree' answer lines up with: 'for' means agreeing matches councillors who voted FOR that motion. Every question here is worded as 'the city should [do the thing the motion proposed]', so agreeIs is 'for' throughout. Questions are chosen to be (a) understandable to a non-expert and (b) genuinely divided, so the result discriminates. Matching is computed in assets/js/match.js.",
+
+  "questions": [
+    {
+      "id": "rcmp-strength",
+      "topic": "Policing",
+      "text": "Prince George should put more RCMP officers on the payroll, even though it raises costs.",
+      "context": "Jan 2025 budget: raising the RCMP's contracted strength from 153 to 157 officers (carried).",
+      "voteId": "2025-01-22-25",
+      "agreeIs": "for"
+    },
+    {
+      "id": "downtown-patrols",
+      "topic": "Downtown safety",
+      "text": "The city should pay for extra RCMP overtime to increase patrols in struggling neighbourhoods like the Lower Patricia area.",
+      "context": "Apr 2023: an amendment directing RCMP funds toward more patrols in the Lower Patricia area (carried).",
+      "voteId": "2023-04-12-1",
+      "agreeIs": "for"
+    },
+    {
+      "id": "victim-services",
+      "topic": "Victim support",
+      "text": "The city should fund a dedicated Victim Services Worker to support victims of crime.",
+      "context": "Jan 2025 budget: adding a $92,116 Victim Services Worker position (the motion was defeated).",
+      "voteId": "2025-01-22-24",
+      "agreeIs": "for"
+    },
+    {
+      "id": "bylaw-officers",
+      "topic": "Bylaw enforcement",
+      "text": "The city should hire more bylaw-enforcement officers.",
+      "context": "Jan 2025 budget: adding two more Bylaw Services officers (the motion was defeated).",
+      "voteId": "2025-01-22-27",
+      "agreeIs": "for"
+    },
+    {
+      "id": "fire-rescue",
+      "topic": "Fire & rescue",
+      "text": "The city should increase the Fire & Rescue budget.",
+      "context": "Jan 2025 budget: approving the Fire and Rescue Service Enhancement (carried).",
+      "voteId": "2025-01-22-26",
+      "agreeIs": "for"
+    },
+    {
+      "id": "downtown-vibrancy",
+      "topic": "Downtown",
+      "text": "The city should spend public money to support a downtown revitalization program run by the downtown business association.",
+      "context": "Sep 2023: $20,000 from council contingency for a Downtown Vibrancy and Vitality Initiative (carried).",
+      "voteId": "2023-09-25-4",
+      "agreeIs": "for"
+    },
+    {
+      "id": "park-camping",
+      "topic": "Homelessness",
+      "text": "The city should act to stop overnight camping in parks such as Millennium Park.",
+      "context": "May 2023: directing staff to begin stopping overnight camping at Millennium Park and remediating the site (carried).",
+      "voteId": "2023-05-08-7",
+      "agreeIs": "for"
+    },
+    {
+      "id": "council-pay",
+      "topic": "Council pay",
+      "text": "Council should reopen the bylaw that sets councillors' own pay and look at changing it.",
+      "context": "Jan 2024: directing staff to bring the Council Remuneration Bylaw back for review and possible amendment (the motion was defeated).",
+      "voteId": "2024-01-08-2",
+      "agreeIs": "for"
+    },
+    {
+      "id": "cut-contingency",
+      "topic": "Spending restraint",
+      "text": "Council should shrink its own discretionary 'contingency' spending fund.",
+      "context": "Jan 2025 budget: cutting the Council Contingency line from $75,000 to $50,000 (carried).",
+      "voteId": "2025-01-22-2",
+      "agreeIs": "for"
+    },
+    {
+      "id": "library-funding",
+      "topic": "Library",
+      "text": "The city should commit to a stable multi-year funding agreement with the public library.",
+      "context": "Jan 2025: directing staff to develop a 5-year funding agreement with the Prince George Public Library (carried).",
+      "voteId": "2025-01-22-10",
+      "agreeIs": "for"
+    },
+    {
+      "id": "event-accountability",
+      "topic": "Spending oversight",
+      "text": "Council should demand a full financial breakdown before continuing to back a city-funded event.",
+      "context": "Apr 2023: directing staff to report back on the costs, revenue and free tickets of a past city-supported event (carried).",
+      "voteId": "2023-04-24-1",
+      "agreeIs": "for"
+    },
+    {
+      "id": "mr-pg-landmark",
+      "topic": "Civic landmarks",
+      "text": "The city should look into installing the 'Mr. PG' landmark at two new high-profile locations.",
+      "context": "Oct 2024: directing staff to report on installing Mr. PG at Canada Games Plaza and the Highway 16/97 junction (carried).",
+      "voteId": "2024-10-07-1",
+      "agreeIs": "for"
+    }
+  ]
+}

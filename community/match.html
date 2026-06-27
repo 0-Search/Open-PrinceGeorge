@@ -1,15 +1,13 @@
 <!DOCTYPE HTML>
 <!--
-	Open Prince George — single councillor page.
-	One page serves all 9 people: it reads ?id=<councillor-id> and renders from
-	data/councillors.json + data/votes.json. No per-person HTML files.
-	Reuses the Phantom template (assets/css/main.css); councillor.css adds only
-	the vote-matrix rules the template never had. Must be served over http(s)
-	(not file://) so the JSON can load.
+	Open Prince George — Issue Match. A short quiz whose questions are tied to
+	real recorded council votes (data/quiz.json + data/votes.json). The engine
+	in assets/js/match.js scores how often each councillor voted the way you
+	answered. Must be served over http(s) so the JSON can load.
 -->
 <html>
 	<head>
-		<title>Councillor — Open Prince George</title>
+		<title>Issue match — Open Prince George</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" type="image/svg+xml" href="images/logo.svg" />
@@ -39,7 +37,8 @@
 					<h2>Menu</h2>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="index.html#council">Your council</a></li>
+						<li><a href="index.html#hearings">Public hearings</a></li>
+						<li><a href="index.html#election">2026 election</a></li>
 						<li><a href="index.html#records">Voting records</a></li>
 						<li><a href="index.html#about">About &amp; method</a></li>
 					</ul>
@@ -49,19 +48,15 @@
 				<div id="main">
 					<div class="inner">
 
-						<div id="pg-placeholder" class="is-hidden"></div>
+						<header>
+							<h1>Issue match</h1>
+							<p>Answer a few quick questions about issues council has actually voted on, and see which councillors tended to vote the way you think. Every question is tied to a real recorded vote &mdash; so the result reflects what they <em>did</em>, not what they said.</p>
+						</header>
 
-						<!-- (1) header: photo + name + role -->
-						<section id="pg-header"><header><h1>Loading&hellip;</h1></header></section>
-
-						<!-- (2) election bar chart -->
-						<section id="pg-bars"></section>
-
-						<!-- (3) vote matrix -->
-						<section id="pg-matrix"></section>
+						<div id="pg-quiz"><p>Loading&hellip;</p></div>
 
 						<ul class="actions">
-							<li><a href="index.html#council" class="button">&larr; Back to council</a></li>
+							<li><a href="index.html#records" class="button">See the full voting matrix &rarr;</a></li>
 						</ul>
 
 					</div>
@@ -72,7 +67,7 @@
 					<div class="inner">
 						<section>
 							<h2>About &amp; method</h2>
-							<p>Open Prince George is an independent project. Every contested vote links back to the city's published minutes so you can check the source yourself.</p>
+							<p>Open Prince George is an independent project, not affiliated with the City or any candidate. Matches are computed from a small set of past recorded votes in the city's minutes &mdash; a conversation-starter, not a full scorecard.</p>
 						</section>
 					</div>
 				</footer>
@@ -85,7 +80,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/councillor.js"></script>
+			<script src="assets/js/match.js"></script>
 
 	</body>
 </html>
