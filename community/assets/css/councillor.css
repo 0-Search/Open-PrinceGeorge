@@ -12,7 +12,7 @@ table.pg-matrix { --rh: 10.5em; }
 	position: relative; overflow: hidden; border-radius: 6px;
 	margin: 0 0 2.5em 0; min-height: 380px;
 	display: flex; align-items: flex-end;
-	background: #1b2a33 url("../../images/bg03.jpg") center 35% / cover no-repeat;
+	background: #1b2a33 url("../../images/city.jpg") center 35% / cover no-repeat;
 }
 .pg-hero::before {
 	content: ''; position: absolute; inset: 0;
@@ -26,6 +26,32 @@ table.pg-matrix { --rh: 10.5em; }
 @media screen and (max-width: 736px) {
 	.pg-hero { min-height: 300px; }
 	.pg-hero .pg-hero-text { padding: 1.5em; }
+}
+
+/* ---- Section banners (image heading area, one per major section) ---------- */
+/* Same treatment as the hero but shorter, used as the title block for each
+   section. The background image is set per-section by the modifier class. */
+.pg-banner {
+	position: relative; overflow: hidden; border-radius: 6px;
+	margin: 3.5em 0 1.75em 0; min-height: 220px;
+	display: flex; align-items: flex-end;
+	background: #1b2a33 center / cover no-repeat;
+}
+.pg-banner::before {
+	content: ''; position: absolute; inset: 0;
+	background: linear-gradient(to top, rgba(20,32,40,0.9) 0%, rgba(20,32,40,0.45) 50%, rgba(20,32,40,0.05) 100%);
+}
+.pg-banner .pg-banner-text { position: relative; padding: 1.75em 2em; max-width: 40em; }
+.pg-banner h2 { color: #fff; margin: 0 0 0.3em 0; }
+.pg-banner p { color: rgba(255,255,255,0.92); margin: 0; }
+
+.pg-banner.hearings { background-image: url("../../images/hearing.jpg"); }
+.pg-banner.council  { background-image: url("../../images/concil.jpg"); }
+.pg-banner.election { background-image: url("../../images/election.jpg"); }
+
+@media screen and (max-width: 736px) {
+	.pg-banner { min-height: 170px; }
+	.pg-banner .pg-banner-text { padding: 1.25em 1.5em; }
 }
 
 /* ---- Public hearings ----------------------------------------------------- */

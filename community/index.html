@@ -70,33 +70,29 @@
 							</section>
 
 							<!-- Public hearings: THE most important section, so it goes first.
-							     Upcoming cards come from data/hearings.json (hand-maintained);
-							     the past archive is derived from the voting record. -->
+							     Homepage shows only the banner + upcoming cards; the how-to-speak
+							     guide and the past-hearings archive live on hearings.html. -->
 							<section id="hearings">
-								<h2>Upcoming public hearings</h2>
-								<p>A public hearing is your formal chance to tell council what you think <em>before</em> they vote &mdash; on rezonings and Official Community Plan changes that affect what gets built in your neighbourhood. You don't need to register: you just show up (in person, by Zoom, or by phone) and speak when the Chair calls for the public, or send a written comment beforehand.</p>
+								<div class="pg-banner hearings">
+									<div class="pg-banner-text">
+										<h2>Public hearings</h2>
+										<p>Your formal chance to tell council what you think &mdash; before they vote on what gets built in your neighbourhood.</p>
+									</div>
+								</div>
 								<div id="pg-hearings-upcoming"><p>Loading&hellip;</p></div>
-
-								<h3>Why it matters &amp; how to speak</h3>
-								<p>Council <em>must</em> hold a public hearing before changing zoning or the Official Community Plan. They have to listen to everyone who shows up before they decide &mdash; so a few minutes from you genuinely counts, especially since most hearings draw only a handful of people.</p>
-								<ul>
-									<li><strong>In person:</strong> Council Chambers, 2nd Floor, City Hall, 1100 Patricia Blvd. Be there when the Chair invites public comments.</li>
-									<li><strong>By Zoom:</strong> join the meeting (ID <strong>848 2979 7394</strong>) and use &ldquo;Raise Hand&rdquo; when the Chair calls for the public.</li>
-									<li><strong>By phone:</strong> dial <strong>1.778.907.2071</strong>, enter the meeting ID, and press <strong>*9</strong> to ask to speak.</li>
-									<li><strong>In writing:</strong> email <a href="mailto:cityclerk@princegeorge.ca">cityclerk@princegeorge.ca</a> (or use the City's online form) <strong>before 12:00&nbsp;p.m. on the day of the hearing</strong>. Written comments become part of the public record.</li>
-									<li><strong>Time to speak:</strong> up to 10 minutes the first time, 5 minutes if you speak again. Give your name and address for the record.</li>
+								<ul class="actions">
+									<li><a href="hearings.html" class="button">Past hearings &amp; how to speak &rarr;</a></li>
 								</ul>
-								<p class="pg-src">Source: City of Prince George &mdash; <a href="https://www.princegeorge.ca/city-hall/mayor-council/participate-council-meetings" target="_blank" rel="noopener">Participate in Council Meetings ↗</a></p>
-
-								<h3>Past hearings</h3>
-								<p>Rezonings and OCP changes this council has already heard, newest first. Pulled from the voting record &mdash; every entry links back to the city's minutes.</p>
-								<div id="pg-hearings-past-preview"><p>Loading&hellip;</p></div>
 							</section>
 
-							<!-- Council: tiles, exactly like index.html (mayor + 8 councillors) -->
+							<!-- Council: banner + tiles (mayor + 8 councillors) -->
 							<section id="council">
-								<h2>Your council</h2>
-								<p>One mayor and eight councillors, elected to represent the whole city. Tap any name for their role, contact details, and record.</p>
+								<div class="pg-banner council">
+									<div class="pg-banner-text">
+										<h2>Your council</h2>
+										<p>One mayor and eight councillors. Tap any name for their role, contact details, and voting record.</p>
+									</div>
+								</div>
 							</section>
 							<section class="tiles">
 								<article class="style1">
@@ -166,8 +162,12 @@
 
 							<!-- Election -->
 							<section id="election">
-								<h2>2026 municipal election</h2>
-								<p><strong id="pg-countdown">Loading&hellip;</strong> until voting day &mdash; Saturday, October 17, 2026. Polls close 8&nbsp;p.m. You'll vote for mayor, eight councillors, and school trustees.</p>
+								<div class="pg-banner election">
+									<div class="pg-banner-text">
+										<h2>2026 municipal election</h2>
+										<p><strong id="pg-countdown">Loading&hellip;</strong> until voting day &mdash; Saturday, October 17, 2026.</p>
+									</div>
+								</div>
 								<ul class="actions">
 									<li><a href="generic.html" class="button">How to vote</a></li>
 									<li><a href="generic.html" class="button">Am I registered?</a></li>
@@ -177,7 +177,7 @@
 							<!-- Voting records -->
 							<section id="records">
 								<h2>Voting records</h2>
-								<p>What they did, not what they said. Every vote here links straight back to the city's own published minutes, so you can check the source yourself. Tap any name above to focus the matrix on one councillor.</p>
+								<p>What they did, not what they said &mdash; every vote links back to the city's own minutes. Tap any name above to focus on one councillor.</p>
 								<div id="pg-placeholder" style="display:none"></div>
 								<div id="pg-overview-matrix"></div>
 							</section>
@@ -185,7 +185,7 @@
 							<!-- Issue match -->
 							<section id="match">
 								<h2>Issue match</h2>
-								<p>Answer a few short questions about the issues you care about, and see which councillors tend to vote the way you think.</p>
+								<p>Answer a few quick questions and see which councillors tend to vote the way you think.</p>
 								<ul class="actions">
 									<li><a href="generic.html" class="button primary">Start the questions</a></li>
 								</ul>
@@ -194,8 +194,7 @@
 							<!-- About & method -->
 							<section id="about">
 								<h2>About &amp; method</h2>
-								<p>Open Prince George is an independent project. It is not affiliated with the City of Prince George or any candidate. The aim is simple: make council easy to follow for people who don't have time to follow it.</p>
-								<p>Every figure links to a public source &mdash; council minutes, the city's website, and Open North's Represent data. Found something wrong? <a href="#">Tell us</a> and we'll fix it.</p>
+								<p>An independent project, not affiliated with the City or any candidate. Every figure links to a public source. Found something wrong? <a href="#">Tell us</a>.</p>
 							</section>
 
 						</div>

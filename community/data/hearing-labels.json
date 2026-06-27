@@ -1,11 +1,22 @@
 {
-  "_note": "Plain-language labels for past public hearings, keyed by the Amendment Bylaw number (the number after 'Amendment Bylaw No.'). The site shows `what` (and `address`) instead of the raw bylaw reference when a label exists; otherwise it falls back to a cleaned 'Rezoning / OCP amendment · Bylaw NNNN' line. You DON'T need to fill them all — do the recent or notable ones first. Get the address + what's being allowed from the council report/minutes PDF for that bylaw.",
+  "_note": "Plain-language labels for past public hearings, keyed by the Amendment Bylaw number (the number after 'Amendment Bylaw No.'). The site shows the street `address` (and `what`, if filled) instead of the raw bylaw reference. `address` comes from the council minutes for that bylaw; `what` is an optional one-line plain-English description of the change — leave it out if you don't know it and the site will show a generic gloss. You DON'T need to fill them all.",
 
   "labels": {
-    "9342": {
-      "type": "Rezoning",
-      "address": "EXAMPLE — replace me: 1234 5th Ave",
-      "what": "EXAMPLE — replace me: lets a developer build a 4-storey apartment where only single houses were allowed."
-    }
+    "9283": { "type": "Rezoning", "address": "4922 Chief Lake Road" },
+    "9334": { "type": "OCP amendment", "address": "4443 & 4505 Ospika Boulevard" },
+    "9335": { "type": "Rezoning", "address": "4443 & 4505 Ospika Boulevard" },
+    "9341": { "type": "OCP amendment", "address": "145 Brunswick Street" },
+    "9342": { "type": "Rezoning", "address": "145 Brunswick Street" },
+    "9348": { "type": "Rezoning", "address": "Dawson Road" },
+    "9365": { "type": "OCP amendment", "address": "2940 14th Avenue" },
+    "9366": { "type": "Rezoning", "address": "2940 14th Avenue" },
+    "9370": { "type": "Rezoning", "address": "9153 Twinberry Drive" },
+    "9371": { "type": "OCP amendment", "address": "4292 22nd Avenue" },
+    "9372": { "type": "Rezoning", "address": "4292 22nd Avenue" },
+    "9387": { "type": "Rezoning", "address": "2690 Queensway" },
+    "9410": { "type": "OCP amendment", "address": "5743 Nicholas Avenue & 5958 Stringer Crescent" },
+    "9440": { "type": "Rezoning", "address": "484 Douglas Street" },
+    "9528": { "type": "Rezoning", "address": "4225 Turner Road" },
+    "9582": { "type": "Rezoning", "address": "2940 14th Avenue" }
   }
 }

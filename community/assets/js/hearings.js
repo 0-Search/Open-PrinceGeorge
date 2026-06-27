@@ -25,7 +25,13 @@
 		var groups = {};
 		votes.forEach(function(v) {
 			if (!HEARING_RE.test(v.title)) return;
-			var key = bylawKey(v.title);
+			// Only count actual rezoning / OCP *amendment bylaws*. Everything else
+			// the keyword catches — meeting-extension motions, calendar changes,
+			// "withhold the hearing" / "adjourn" motions, notification-area tweaks,
+			// Development Variance Permits — is procedure, not a hearing, so skip it.
+			var amend = v.title.match(/Amendment Bylaw No\.?\s*([0-9]+)/i);
+			if (!amend) return;
+			var key = 'amend-' + amend[1];
 			if (!groups[key]) groups[key] = { key: key, name: quotedName(v.title), votes: [] };
 			groups[key].votes.push(v);
 		});
@@ -92,6 +98,21 @@
 		return { type: ocp ? 'OCP amendment' : 'Rezoning', no: m ? m[1] : null, year: m && m[2] ? m[2] : null };
 	}
 
+	// One plain-English sentence per type, so a reader who has never heard the
+	// word "rezoning" still understands what the vote decided.
+	var TYPE_GLOSS = {
+		'Rezoning': 'Rezoning — a vote on what can be built on this land',
+		'OCP amendment': 'Community-plan change — updates the City’s long-term land-use map'
+	};
+
+	// Turn council's procedural verb ("carried" / "defeated") into a plain word.
+	function plainResult(r) {
+		r = (r || '').toLowerCase();
+		if (/carr|adopt|grant|approv/.test(r)) return 'Approved';
+		if (/defeat|den|reject|fail/.test(r)) return 'Rejected';
+		return r || 'Decided';
+	}
+
 	// A single compact result bar per hearing. Segments are sized by vote share;
 	// hovering/tapping a segment reveals the councillors in it (each a link to
 	// their page). `labels` adds a plain-language description when available.
@@ -120,21 +141,27 @@
 		var src = g.latest.source ? ' &middot; <a class="pg-src" href="' + esc(g.latest.source.url) + '" target="_blank" rel="noopener">minutes' +
 			(g.latest.source.page ? ' p.' + esc(g.latest.source.page) : '') + ' ↗</a>' : '';
 
-		// Plain-language label when we have one; otherwise a cleaned reference.
+		// Headline: prefer the street address (and a plain summary if we have one);
+		// fall back to the bylaw number. Either way the line below it explains, in
+		// plain words, what kind of decision this was.
 		var meta = hearingMeta(g.name);
 		var label = labels && meta.no ? labels[meta.no] : null;
-		var title, ref;
-		if (label && label.what) {
-			title = (label.address ? esc(label.address) + ' — ' : '') + esc(label.what);
-			ref = esc(label.type || meta.type) + (meta.no ? ' &middot; Bylaw ' + esc(meta.no) : '') + (meta.year ? ' (' + esc(meta.year) + ')' : '');
+		var type = (label && label.type) || meta.type;
+		var bylawRef = (meta.no ? ' &middot; Bylaw ' + esc(meta.no) : '') + (meta.year ? ' (' + esc(meta.year) + ')' : '');
+		var title;
+		if (label && label.address) {
+			title = esc(label.address) + (label.what ? ' — ' + esc(label.what) : '');
+		} else if (label && label.what) {
+			title = esc(label.what);
 		} else {
-			title = esc(meta.type) + (meta.no ? ' &middot; Bylaw ' + esc(meta.no) : '') + (meta.year ? ' (' + esc(meta.year) + ')' : '');
-			ref = '<span class="pg-hbar-plain">Plain summary not added yet &mdash; see the minutes for what & where.</span>';
+			title = esc(type) + bylawRef;
 		}
+		var ref = '<span class="pg-hbar-plain">' + esc(TYPE_GLOSS[type] || type) +
+			(label && label.address ? bylawRef : '') + '</span>';
 
 		return '<div class="pg-hbar-row">' +
 			'<div class="pg-hbar-head"><span class="pg-hbar-title" title="' + esc(g.name) + '">' + title + '</span>' +
-			'<span class="pg-hbar-meta">' + when + ' &middot; ' + esc(g.latest.result) + src + '</span></div>' +
+			'<span class="pg-hbar-meta">' + when + ' &middot; <strong>' + esc(plainResult(g.latest.result)) + '</strong>' + src + '</span></div>' +
 			'<div class="pg-hbar-ref">' + ref + '</div>' +
 			'<div class="pg-hbar">' + segs + '</div>' +
 			'</div>';
@@ -149,12 +176,15 @@
 		var list = derivePastHearings(vData.votes);
 		var shown = limit ? list.slice(0, limit) : list;
 
-		var html = '<p class="pg-hbar-legend">' +
+		var html = '<p class="pg-hbar-intro">Each row below is one council decision about a building or land-use change in Prince George ' +
+			'&mdash; for example, letting someone build apartments where only houses were allowed. ' +
+			'The address shows <em>where</em>; the coloured bar shows <em>how each councillor voted</em>.</p>' +
+			'<p class="pg-hbar-legend">' +
 			'<span class="pg-seg for"></span> For &nbsp; ' +
 			'<span class="pg-seg against"></span> Against &nbsp; ' +
 			'<span class="pg-seg absent"></span> Absent &nbsp; ' +
 			'<span class="pg-seg abstain"></span> Abstain / recused' +
-			'<br><small>Bar shows the final reading. Hover or tap a colour to see who &mdash; and open their page.</small></p>';
+			'<br><small>Bar shows council’s final vote. Hover or tap a colour to see who &mdash; and open their page.</small></p>';
 		html += '<div class="pg-hbars">' + shown.map(function(g){ return hearingBar(g, order, byId, labels); }).join('') + '</div>';
 		if (limit && list.length > limit) {
 			html += '<ul class="actions"><li><a href="hearings.html" class="button">Browse all ' + list.length + ' past hearings &rarr;</a></li></ul>';
