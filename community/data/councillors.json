@@ -1,15 +1,19 @@
 {
-  "_note": "PLACEHOLDER DATA. Vote counts below are NOT yet verified against official 2022 City of Prince George results. Replace with real numbers from the city/Elections BC before publishing. Structure is final; numbers are not.",
-  "_placeholder": true,
+  "_note": "Election results are the OFFICIAL 2022 City of Prince George totals, certified by the Chief Election Officer on 2022-10-17. Source: https://www.princegeorge.ca/city-hall/reports-publications/2022-election-official-results (Determination of Official Election Results PDF). Top 8 council candidates by vote elected.",
+  "_placeholder": false,
+  "_source": "https://www.princegeorge.ca/city-hall/reports-publications/2022-election-official-results",
 
   "races": {
     "mayor2022": {
       "year": 2022,
       "raceType": "mayor",
       "candidates": [
-        { "name": "Simon Yu",      "votes": 6000, "elected": true },
-        { "name": "Lyn Hall",      "votes": 5200, "elected": false },
-        { "name": "Other Candidate", "votes": 2100, "elected": false }
+        { "name": "Simon Yu",        "votes": 6092, "elected": true },
+        { "name": "Terri McConnachie", "votes": 4152, "elected": false },
+        { "name": "Roy Stewart",      "votes": 2424, "elected": false },
+        { "name": "Adam Hyatt",       "votes": 1773, "elected": false },
+        { "name": "Lisa Mitchell",    "votes": 553,  "elected": false },
+        { "name": "Christopher S. Wood", "votes": 159, "elected": false }
       ]
     },
     "council2022": {
@@ -17,17 +21,26 @@
       "raceType": "council",
       "seats": 8,
       "candidates": [
-        { "name": "Kyle Sampson",   "votes": 9000, "elected": true },
-        { "name": "Cori Ramsay",    "votes": 8600, "elected": true },
-        { "name": "Garth Frizzell", "votes": 8200, "elected": true },
-        { "name": "Susan Scott",    "votes": 7800, "elected": true },
-        { "name": "Ron Polillo",    "votes": 7400, "elected": true },
-        { "name": "Brian Skakun",   "votes": 7100, "elected": true },
-        { "name": "Tim Bennett",    "votes": 6900, "elected": true },
-        { "name": "Trudy Klassen",  "votes": 6500, "elected": true },
-        { "name": "Runner Up A",    "votes": 6100, "elected": false },
-        { "name": "Runner Up B",    "votes": 5400, "elected": false },
-        { "name": "Runner Up C",    "votes": 4800, "elected": false }
+        { "name": "Brian Skakun",   "votes": 9370, "elected": true },
+        { "name": "Garth Frizzell", "votes": 6911, "elected": true },
+        { "name": "Kyle Sampson",   "votes": 6840, "elected": true },
+        { "name": "Cori Ramsay",    "votes": 5971, "elected": true },
+        { "name": "Ron Polillo",    "votes": 5685, "elected": true },
+        { "name": "Trudy Klassen",  "votes": 5515, "elected": true },
+        { "name": "Tim Bennett",    "votes": 5295, "elected": true },
+        { "name": "Susan Scott",    "votes": 5224, "elected": true },
+        { "name": "Wesley Mitchell", "votes": 4790, "elected": false },
+        { "name": "Cameron Stolz",  "votes": 4401, "elected": false },
+        { "name": "Karm Manhas",    "votes": 4333, "elected": false },
+        { "name": "Karen Muir",     "votes": 3973, "elected": false },
+        { "name": "James Steidle",  "votes": 3947, "elected": false },
+        { "name": "John Zukowski",  "votes": 3440, "elected": false },
+        { "name": "Colleen Mahoney", "votes": 3399, "elected": false },
+        { "name": "Chris Stern",    "votes": 2425, "elected": false },
+        { "name": "Paul Serup",     "votes": 2081, "elected": false },
+        { "name": "Doug Jeffery",   "votes": 1903, "elected": false },
+        { "name": "Nour Salim",     "votes": 1729, "elected": false },
+        { "name": "Richard Cook",   "votes": 1202, "elected": false }
       ]
     }
   },

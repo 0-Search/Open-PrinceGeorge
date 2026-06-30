@@ -15,20 +15,32 @@
   ],
   "categories": [
     {
-      "id": "finance",
-      "label": "Finance & budget"
-    },
-    {
       "id": "safety",
-      "label": "Public safety & downtown"
+      "label": "Public safety"
     },
     {
       "id": "housing",
-      "label": "Housing & rezoning"
+      "label": "Housing & development"
+    },
+    {
+      "id": "community",
+      "label": "Parks, culture & rec"
+    },
+    {
+      "id": "infrastructure",
+      "label": "Roads & infrastructure"
+    },
+    {
+      "id": "budget",
+      "label": "Budget & taxes"
+    },
+    {
+      "id": "procedural",
+      "label": "Procedural & motions"
     },
     {
       "id": "governance",
-      "label": "Governance & process"
+      "label": "Governance & policy"
     },
     {
       "id": "other",
@@ -167,7 +179,7 @@
     {
       "id": "2022-12-05-6",
       "date": "2022-12-05",
-      "category": "governance",
+      "category": "other",
       "title": "Regular Council Meeting Minutes – December 5, 2022 Page 10 That Council APPROVES the following public consultation proc ess to fulfill the requirements of Section 475 of the Local Government Act: a. Request for written comment from properties identified on Exhibit “A” to CP100192",
       "result": "carried",
       "source": {
@@ -217,7 +229,7 @@
     {
       "id": "2022-12-05-8",
       "date": "2022-12-05",
-      "category": "safety",
+      "category": "governance",
       "title": "That Council PERMITS the Public Hearing for proposed Bylaw No. 9341 and Bylaw No. 9342 BE WITHHELD until the following requirements have been met to the satisfaction of Administration: a. Receipt of a Landscaping Plan and security in the amount of 120% of the cost of the landscap",
       "result": "carried",
       "source": {
@@ -243,7 +255,7 @@
     {
       "id": "2022-12-05-9",
       "date": "2022-12-05",
-      "category": "housing",
+      "category": "governance",
       "title": "That Council PERMITS that consideration of Final Reading for proposed Bylaw No. 9341 and Bylaw No. 9342 BE WITHHELD until the following requiremen ts have been met to the satisfaction of Administration: a. Receipt of confirmation that Lots 5-9, Block 19, District Lot 343, Cariboo",
       "result": "carried",
       "source": {
@@ -294,7 +306,7 @@
     {
       "id": "2023-01-16-1",
       "date": "2023-01-16",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the “Requests for Letters of Support for Grants” Policy by adding to section 3(g) the words “ and will remain subject to the Community Charter conflict of interest restrictions\" after the words \"Council meeting.\"",
       "result": "carried",
       "source": {
@@ -321,7 +333,7 @@
     {
       "id": "2023-01-16-2",
       "date": "2023-01-16",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the \"Requests for Letters of Support for Grants\" polic y by deleting in its entirety section 3(c)(v).",
       "result": "defeated",
       "source": {
@@ -350,7 +362,7 @@
     {
       "id": "2023-01-30-1",
       "date": "2023-01-30",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council DIRECTS Administration to return a report to Council with options regarding types of paint for road marking and techniques used in line painting.",
       "result": "carried",
       "source": {
@@ -376,7 +388,7 @@
     {
       "id": "2023-02-01-1",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Human Resources Service Category as presented on pages 34 and 35 of the 2023 – 2027 Operational Financial Plan, as attached to the February 1, 2023 regular council budget meeting with a budget reduction of $110,000.",
       "result": "defeated",
       "source": {
@@ -407,7 +419,7 @@
     {
       "id": "2023-02-01-2",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Human Resources Service Category as presented on pages 34 and 35 of the 2023 – 2027 Operational Financial Plan, as attached to the February 1, 2023 regular council budget meeting.",
       "result": "carried",
       "source": {
@@ -432,7 +444,7 @@
     {
       "id": "2023-02-01-3",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category as presented on pages 47 and 48 of the 2023 - 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda with a budget reduction of $50,000.",
       "result": "defeated",
       "source": {
@@ -461,7 +473,7 @@
     {
       "id": "2023-02-01-4",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category as presented on pages 47 and 48 of the 2023 - 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -487,7 +499,7 @@
     {
       "id": "2023-02-01-5",
       "date": "2023-02-01",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by replacing the number “$ 400,000” with “$600,000”.",
       "result": "carried",
       "source": {
@@ -514,7 +526,7 @@
     {
       "id": "2023-02-01-6",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Police Protection Services Enhancement: Increase of Four (4) RCMP Positions as presented on page 119 of the 2023 - 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda, with funding allocated from the",
       "result": "defeated",
       "source": {
@@ -544,7 +556,7 @@
     {
       "id": "2023-02-01-7",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council AMENDS the Snow Control revenue line in the Fiscal Services Service Category as presented on page 122 of the 2023 – 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda from a credit of $10,400,000 to a credit of ",
       "result": "carried",
       "source": {
@@ -569,7 +581,7 @@
     {
       "id": "2023-02-01-8",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the Taxes - General revenue line in the Fiscal Services Service Category as presented on page 122 of the 2023 – 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda from a credit of $110,277,511 to a credit",
       "result": "carried",
       "source": {
@@ -619,7 +631,7 @@
     {
       "id": "2023-02-01-10",
       "date": "2023-02-01",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Fiscal Services Service Category as presented on page 122, 123, 124 and 125 of the 2023 – 2027 Operational Financial Plan, as attached to the February 1, 2023 Regular Council Budget Meeting agenda as amended.",
       "result": "carried",
       "source": {
@@ -849,7 +861,7 @@
     {
       "id": "2023-03-13-9",
       "date": "2023-03-13",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council APPROVES the following pu blic consultation process to fulfill the requirements of Section 475 of the Local Government Act: a. Request for written comment from properties identified on Exhibit “A” to CP100194.",
       "result": "carried",
       "source": {
@@ -874,7 +886,7 @@
     {
       "id": "2023-03-13-10",
       "date": "2023-03-13",
-      "category": "housing",
+      "category": "governance",
       "title": "That Council EXPANDS, from 30 meters distance to the notification area shown on Exhibit ‘A’ to CP100194, as required in the “City of Prince George Development Procedures Bylaw No. 7635, 2005,” for the mailing of notice of the public hearing for the “City of Prince George Official",
       "result": "carried",
       "source": {
@@ -974,7 +986,7 @@
     {
       "id": "2023-03-27-1",
       "date": "2023-03-27",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council REFERS to the Standing Committee on Intergovernmental Affairs for review and a report back to Council on next steps, the notice of motion regarding “Meetings with Other Locally Elected Official” as attached to the March 27, 2023 regular council meeting agenda. Discus",
       "result": "defeated",
       "source": {
@@ -1056,7 +1068,7 @@
     {
       "id": "2023-03-27-4",
       "date": "2023-03-27",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council PERMITS that consideration of Final Reading of proposed Bylaw No. 9370 BE WITHHELD until the following requirements have been met to the s atisfaction of Administration: a. Receipt of a Servicing Brief; b. Receipt of a Traffic Impact Study; and c. Registration of Sec",
       "result": "carried",
       "source": {
@@ -1139,7 +1151,7 @@
     {
       "id": "2023-04-24-1",
       "date": "2023-04-24",
-      "category": "finance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to return a report to Council on the financial matters of Cariboo Rocks the North past events breaking down the total cost, total revenue and total tickets given away.",
       "result": "carried",
       "source": {
@@ -1244,7 +1256,7 @@
     {
       "id": "2023-04-24-5",
       "date": "2023-04-24",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of \"City of Prince George 5 – Year Operating and Capital Financial Plans Bylaw No. 9395, 2023.\"",
       "result": "carried",
       "source": {
@@ -1270,7 +1282,7 @@
     {
       "id": "2023-04-24-6",
       "date": "2023-04-24",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of \"City of Prince George Tax Rates Bylaw No. 9396, 2023.\"",
       "result": "carried",
       "source": {
@@ -1434,7 +1446,7 @@
     {
       "id": "2023-05-08-6",
       "date": "2023-05-08",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES increasing the RCMP contract by two regular members from 147 to 149 to be dedicated to the new Provincial Repeat Violent Offender Intervention Initiative (ReVOII) using existing funds for 2023, and DIRECTS Administration to incorporate this increase as a fun",
       "result": "carried",
       "source": {
@@ -1460,7 +1472,7 @@
     {
       "id": "2023-05-08-7",
       "date": "2023-05-08",
-      "category": "other",
+      "category": "safety",
       "title": "That Council DIRECTS Administration to initiate the planning and action process to stop overnight camping at Millennium Park and commence remediation of that site, subject to Council ap proving final reading and adoption of “Parks and Open Space Bylaw No. 7370, 2002, Amendment By",
       "result": "carried",
       "source": {
@@ -1485,7 +1497,7 @@
     {
       "id": "2023-05-08-8",
       "date": "2023-05-08",
-      "category": "finance",
+      "category": "community",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of \" Parks and Open Space Bylaw No. 7370, 2002, Amendment Bylaw No. 9389, 2023.\"",
       "result": "carried",
       "source": {
@@ -1510,7 +1522,7 @@
     {
       "id": "2023-05-08-9",
       "date": "2023-05-08",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of \" City of Prince George Tax Rates Bylaw No. 9396, 2023.\"",
       "result": "carried",
       "source": {
@@ -1560,7 +1572,7 @@
     {
       "id": "2023-06-12-1",
       "date": "2023-06-12",
-      "category": "finance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to proceed with the next step in the Mega Park project by formalizing an agreement with the Community Foundation and Rotary Club, including preparation of a Stage Gate Review Process in accordance with the Council approved Organizational Capita",
       "result": "defeated",
       "source": {
@@ -1617,7 +1629,7 @@
     {
       "id": "2023-06-12-3",
       "date": "2023-06-12",
-      "category": "finance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to return a report to Council with further information regarding the proposed Prince George Community Foundation – Rotary Destination Park (“Mega Park”) project including information on project scope, projected timelines, financials, business p",
       "result": "carried",
       "source": {
@@ -1724,7 +1736,7 @@
     {
       "id": "2023-06-26-1",
       "date": "2023-06-26",
-      "category": "finance",
+      "category": "other",
       "title": "That Council APPROVES the 2022 Public Bodies Report attached to the report dated June 16, 2023 from the Director of Finance and IT Services titled “2022 Statements of Financial Information (SOFI)”.",
       "result": "carried",
       "source": {
@@ -1774,7 +1786,7 @@
     {
       "id": "2023-08-16-1",
       "date": "2023-08-16",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by replacing the words “local media” with the words “local newspaper.”",
       "result": "defeated",
       "source": {
@@ -1804,7 +1816,7 @@
     {
       "id": "2023-08-16-2",
       "date": "2023-08-16",
-      "category": "other",
+      "category": "governance",
       "title": "That Council DIRECTS Administration to return for Council’s consideration an amendment to the “City of Prince George Public Notice Bylaw No. 9329, 2022” that includes “local newspaper” as a required means of publication for City of Prince George public notices in addition to the ",
       "result": "defeated",
       "source": {
@@ -1911,7 +1923,7 @@
     {
       "id": "2023-08-16-6",
       "date": "2023-08-16",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Sign Bylaw No. 7202, 2001, Amendment Bylaw No. 9424, 2023.\"",
       "result": "carried",
       "source": {
@@ -1937,7 +1949,7 @@
     {
       "id": "2023-08-16-7",
       "date": "2023-08-16",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Building Bylaw No. 8922, 2018, Amendment Bylaw No. 9425, 2023.\"",
       "result": "carried",
       "source": {
@@ -1963,7 +1975,7 @@
     {
       "id": "2023-08-28-1",
       "date": "2023-08-28",
-      "category": "finance",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Comprehensive Fees and Charges Bylaw No. 7557, 2004, Amendment Bylaw No. 9420, 2023.”",
       "result": "carried",
       "source": {
@@ -2041,7 +2053,7 @@
     {
       "id": "2023-08-28-4",
       "date": "2023-08-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Development Procedures Bylaw No. 9423, 2023.”",
       "result": "carried",
       "source": {
@@ -2067,7 +2079,7 @@
     {
       "id": "2023-08-28-5",
       "date": "2023-08-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Building Bylaw No. 8922, 2018, Amendment Bylaw No. 9425, 2023.”",
       "result": "carried",
       "source": {
@@ -2148,7 +2160,7 @@
     {
       "id": "2023-09-11-3",
       "date": "2023-09-11",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Comprehensive Fees and Charges Bylaw No. 7557, 2004, Amendment Bylaw No. 9420, 2023.”",
       "result": "carried",
       "source": {
@@ -2275,7 +2287,7 @@
     {
       "id": "2023-10-30-1",
       "date": "2023-10-30",
-      "category": "finance",
+      "category": "other",
       "title": "That Council DIRECTS Administration to continue with the existing industry standard process for charging a fee for services provided outside regular business hours.",
       "result": "carried",
       "source": {
@@ -2300,7 +2312,7 @@
     {
       "id": "2023-11-20-1",
       "date": "2023-11-20",
-      "category": "other",
+      "category": "housing",
       "title": "That Council APPROVES Temporary Use Permit No. TU000086 for one year on the property legally described as Lot 3, District Lot 1597, Cariboo District, Plan 25922.",
       "result": "carried",
       "source": {
@@ -2353,7 +2365,7 @@
     {
       "id": "2023-12-18-1",
       "date": "2023-12-18",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS administration to return a report to a regular council meeting outlining options regarding a process for the allocation of funds from council contingency including the following considerations: • an enhanced delegation request form that provides additional in",
       "result": "carried",
       "source": {
@@ -2379,7 +2391,7 @@
     {
       "id": "2023-12-18-2",
       "date": "2023-12-18",
-      "category": "other",
+      "category": "community",
       "title": "That Council AMENDS the main motion by adding the words “with consultation of the Community Arts Council and the Spruce Kings” after the word “arena”.",
       "result": "defeated",
       "source": {
@@ -2408,7 +2420,7 @@
     {
       "id": "2023-12-18-3",
       "date": "2023-12-18",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by adding the words “including access to public washrooms” after the word “results”.",
       "result": "defeated",
       "source": {
@@ -2437,7 +2449,7 @@
     {
       "id": "2023-12-18-4",
       "date": "2023-12-18",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION to “City of Prince George Code of Conduct Bylaw No. 9439, 2023.”",
       "result": "carried",
       "source": {
@@ -2464,7 +2476,7 @@
     {
       "id": "2024-01-08-1",
       "date": "2024-01-08",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council amends the main motion by adding the words, “with the operational component be returned in time for budget discussions” after the word ‘information.’",
       "result": "carried",
       "source": {
@@ -2490,7 +2502,7 @@
     {
       "id": "2024-01-08-2",
       "date": "2024-01-08",
-      "category": "governance",
+      "category": "budget",
       "title": "That Council DIRECTS administration to return the Council Remuneration Bylaw, Bylaw No. 8414, 2012, to Council for review and options for amendment.”",
       "result": "defeated",
       "source": {
@@ -2545,7 +2557,7 @@
     {
       "id": "2024-02-05-1",
       "date": "2024-02-05",
-      "category": "finance",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS to “City of Prince George Comprehensive Fees and Charges Bylaw No. 7557, 2004, Amendment Bylaw No. 9450, 2024”.",
       "result": "carried",
       "source": {
@@ -2570,7 +2582,7 @@
     {
       "id": "2024-04-22-1",
       "date": "2024-04-22",
-      "category": "finance",
+      "category": "community",
       "title": "2. APPROVES Phase 1a increasing the budget for Project # 3108 – AQC- Mechanical/Building Envelope Upgrade by $1,300,000 with a funding source of MFA Debt Proceeds, as described in the report to Council dated April 9, 2024 titled Prince George Aquatic Center Mechanical & building ",
       "result": "carried",
       "source": {
@@ -2596,7 +2608,7 @@
     {
       "id": "2024-04-22-2",
       "date": "2024-04-22",
-      "category": "finance",
+      "category": "community",
       "title": "3. APPROVES Phase 1b increasing the budget for Project # 3108 – AQC- Mechanical/Building Envelope Upgrade by $1,850,000 with a funding source of MFA Debt Proceeds, as described in the report to Council dated April 9, 2024 titled Prince George Aquatic Center Mechanical & building ",
       "result": "carried",
       "source": {
@@ -2622,7 +2634,7 @@
     {
       "id": "2024-04-22-3",
       "date": "2024-04-22",
-      "category": "finance",
+      "category": "budget",
       "title": "4. APPROVES Phase 2 increasing the budget for Project # 3108 – AQC- Mechanical/Building Envelope Upgrade by $7,900,000 with a funding source of MFA Regular Meeting of Council – April 22, 2024 8 Debt Proceedsu, as described in the report to Council dated April 9, 2024 titled Princ",
       "result": "carried",
       "source": {
@@ -2648,7 +2660,7 @@
     {
       "id": "2024-04-22-4",
       "date": "2024-04-22",
-      "category": "finance",
+      "category": "community",
       "title": "5. APPROVES Phase 3 increasing the budget for Project # 3108 – AQC- Mechanical/Building Envelope Upgrade by $4,500,000 with a funding source of MFA Debt Proceeds , as described in the report to Council dated April 9, 2024 titled Prince George Aquatic Center Mechanical & building ",
       "result": "carried",
       "source": {
@@ -2674,7 +2686,7 @@
     {
       "id": "2024-04-22-5",
       "date": "2024-04-22",
-      "category": "finance",
+      "category": "community",
       "title": "6. APPROVES Phase 4 increasing the budget for Project # 3108 – AQC- Mechanical/Building Envelope Upgrade by $6,600,000 with a funding source of MFA Debt Proceeds , as described in the report to Council dated April 9, 2024 titled Prince George Aquatic Center Mechanical & building ",
       "result": "carried",
       "source": {
@@ -2700,7 +2712,7 @@
     {
       "id": "2024-05-06-1",
       "date": "2024-05-06",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council REFERS to the Advisory Committee on Bear Awareness consideration and a report back to Council regarding the motion to create a Fruit Tree Removal and Incentive Program as described in the report dated April 9, 2024 from the Director of Civic Operations titled “City o",
       "result": "carried",
       "source": {
@@ -2727,7 +2739,7 @@
     {
       "id": "2024-05-06-2",
       "date": "2024-05-06",
-      "category": "other",
+      "category": "community",
       "title": "That Council GIVES FIRST THREE READINGS to Prince George Aquatic Centre Mechanical and Building Update Phases 1a, 1b, 2, 3 and 4 Loan Authorization Bylaw No. 9468, 2024.",
       "result": "carried",
       "source": {
@@ -2753,7 +2765,7 @@
     {
       "id": "2024-05-06-3",
       "date": "2024-05-06",
-      "category": "other",
+      "category": "community",
       "title": "That Council: 1. subject to obtaining statutory approval from the Inspector of Municipalities for Prince George Aquatic Centre Mechanical and Building Envelope Update Phases 1a, 1b, 2, 3 and 4 Loan Authorization Bylaw No. 9468, 2024, APPROVES an alternative approval process in ac",
       "result": "carried",
       "source": {
@@ -2779,7 +2791,7 @@
     {
       "id": "2024-05-06-4",
       "date": "2024-05-06",
-      "category": "finance",
+      "category": "community",
       "title": "That Council GIVES FINAL READING AND ADOPTION to “Aquatic Centre Renewal and Upgrade Loan Authorization Bylaw No. 9010, 2019 Temporary Borrowing Bylaw No. 9462, 2024.”",
       "result": "carried",
       "source": {
@@ -2805,7 +2817,7 @@
     {
       "id": "2024-05-27-1",
       "date": "2024-05-27",
-      "category": "finance",
+      "category": "community",
       "title": "That Council APPROVES a financial contribution of $7500 to the 2024 Inspiring Women Among Us event to be paid from Council Contingency.",
       "result": "carried",
       "source": {
@@ -2831,7 +2843,7 @@
     {
       "id": "2024-05-27-2",
       "date": "2024-05-27",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS Administration to provide information on the City of Prince George grant streams and sponsorship opportunities and on opportunities to obtain a letter of support for 3rd party grant funding applications.",
       "result": "carried",
       "source": {
@@ -2882,7 +2894,7 @@
     {
       "id": "2024-06-12-1",
       "date": "2024-06-12",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council DIRECTS Administration to return a report to Council outlining the budget impact if the City were to cease clearing driveways as described in the Snow and Ice Control Policy.",
       "result": "carried",
       "source": {
@@ -2910,7 +2922,7 @@
     {
       "id": "2024-06-12-2",
       "date": "2024-06-12",
-      "category": "finance",
+      "category": "procedural",
       "title": "That Council POSTPONES consideration of the motion to the August 19, 2024 regular Council meeting or earlier following a meeting between the City of Prince George and the Lheidli T’enneh First Nation to discuss intent and goals in relation to the current and future “Addition to R",
       "result": "defeated",
       "source": {
@@ -2942,7 +2954,7 @@
     {
       "id": "2024-06-12-3",
       "date": "2024-06-12",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS administration to submit a letter, substantially similar to the draft letter attached to the report dated June 3, 2024 from the Director of Administrative Services titled “Addition to Reserve Application – Lheidli T’enneh First Nation” to Indigenous Services ",
       "result": "carried",
       "source": {
@@ -2967,7 +2979,7 @@
     {
       "id": "2024-06-12-4",
       "date": "2024-06-12",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS administration to arrange the signing of a Letter of Understanding, substantially similar to the draft as attached to the report dated June 3, 2024 from the Director of Administrative Services titled “Addition to Reserve Application – Lheidli T’enneh First Na",
       "result": "carried",
       "source": {
@@ -2992,7 +3004,7 @@
     {
       "id": "2024-06-24-1",
       "date": "2024-06-24",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council RECEIVES FOR INFORMATION the report dated June 5, 2024 from the Manager of Legislative Services, titled \"Land-Use Bylaw Process Changes\".",
       "result": "carried",
       "source": {
@@ -3100,7 +3112,7 @@
     {
       "id": "2024-08-19-1",
       "date": "2024-08-19",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS to “City of Prince George Building Bylaw No. 9482, 2024”.",
       "result": "carried",
       "source": {
@@ -3176,7 +3188,7 @@
     {
       "id": "2024-08-19-4",
       "date": "2024-08-19",
-      "category": "other",
+      "category": "governance",
       "title": "That Council EXTENDS the Regular Council Meeting time from 10:00 p.m. to 11:00 p.m.",
       "result": "carried",
       "source": {
@@ -3201,7 +3213,7 @@
     {
       "id": "2024-08-19-5",
       "date": "2024-08-19",
-      "category": "finance",
+      "category": "community",
       "title": "That Council GRANTS FINAL READING AND ADOPTION to “Prince George Aquatic Centre Mechanical and Building Envelope Update Phases 1a, 1b, 2, 3, and 4 Loan Authorization Bylaw No. 9468, 2024.”",
       "result": "carried",
       "source": {
@@ -3228,7 +3240,7 @@
     {
       "id": "2024-09-25-1",
       "date": "2024-09-25",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council POSTPONES consideration of the main motion to a meeting following receipt of an updated Traffic Impact Study.",
       "result": "carried",
       "source": {
@@ -3279,7 +3291,7 @@
     {
       "id": "2024-09-25-3",
       "date": "2024-09-25",
-      "category": "housing",
+      "category": "infrastructure",
       "title": "That Council APPROVES Option 4 to “create a utility fee based on the actual measurement of the hard surface area in a sampling of all types of residential properties” as described in the report dated September 9, 2024 from the Director of Planning and Development, titled “Stormwa",
       "result": "carried",
       "source": {
@@ -3332,7 +3344,7 @@
     {
       "id": "2024-09-25-5",
       "date": "2024-09-25",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council RECEIVES FOR INFORMATION the report dated September 13, 2024 from the Director of Civic Operations, titled “Fox Drive Paving Estimate.\"",
       "result": "carried",
       "source": {
@@ -3383,7 +3395,7 @@
     {
       "id": "2024-10-07-2",
       "date": "2024-10-07",
-      "category": "other",
+      "category": "community",
       "title": "That Council RECEIVES FOR INFORMATION the report dated October 1, 2024 from the Director of Civic Operations titled “Lheidli T’enneh Memorial Park Playground Renewal”.",
       "result": "carried",
       "source": {
@@ -3435,7 +3447,7 @@
     {
       "id": "2024-10-21-1",
       "date": "2024-10-21",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council REFERS to the Standing Committee on Finance and Audit the report dated October 5, 2024 from the Director of Finance and IT Services titled “2024 Q3 Council Contingency Report” for consideration on how and whether unspent Council Contingency funds should be transferre",
       "result": "defeated",
       "source": {
@@ -3489,7 +3501,7 @@
     {
       "id": "2024-10-21-3",
       "date": "2024-10-21",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council REFERS to the Standing Committee on Finance and Audit for further consideration the notice of motion from Councillor Sampson regarding the Sustainable Finance Policy.",
       "result": "defeated",
       "source": {
@@ -3517,7 +3529,7 @@
     {
       "id": "2024-10-21-4",
       "date": "2024-10-21",
-      "category": "finance",
+      "category": "community",
       "title": "That That Council APPROVES the following three staff recommendations in the report titled, “Bi-annual town hall proposal” from the Director of Administrative Services dated September 23, 2024: 1. That the town hall or open house style event held each fall as part of the budget en",
       "result": "carried",
       "source": {
@@ -3542,7 +3554,7 @@
     {
       "id": "2024-10-21-5",
       "date": "2024-10-21",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council REFERS to Administration to return a report to Council with options on reinstating sending student delegates to NCLGA, UBCM, FCM conferences and conventions, and providing a scholarship in support of a local youth delegate attending the Youth Parliament program in 20",
       "result": "carried",
       "source": {
@@ -3567,7 +3579,7 @@
     {
       "id": "2024-11-18-1",
       "date": "2024-11-18",
-      "category": "governance",
+      "category": "procedural",
       "title": "That the agenda for the regular meeting of Council scheduled for November 18, 2024, be amended by adding a late item of correspondence from the Spirit of the North Foundation as agenda item H.3.",
       "result": "defeated",
       "source": {
@@ -3594,7 +3606,7 @@
     {
       "id": "2024-11-18-2",
       "date": "2024-11-18",
-      "category": "governance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to establish a Select Committee, composed of 4 members of Council and 3 external members from the public, with the mandate to develop a framework and plan for an annual City of Prince George citizen recognition program. Administration is to pro",
       "result": "carried",
       "source": {
@@ -3621,7 +3633,7 @@
     {
       "id": "2024-11-18-3",
       "date": "2024-11-18",
-      "category": "other",
+      "category": "community",
       "title": "That Council DIRECTS Administration to review and enhance the existing employee Service Recognition Awards program to further recognize City employees for their long service and dedication to our community, and report back to Council with the results of that review.",
       "result": "carried",
       "source": {
@@ -3750,7 +3762,7 @@
     {
       "id": "2024-12-02-4",
       "date": "2024-12-02",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES up to $5,000 from the council contingency budget in support of the upcoming Northern Angel Investment Summit.",
       "result": "carried",
       "source": {
@@ -3801,7 +3813,7 @@
     {
       "id": "2024-12-16-1",
       "date": "2024-12-16",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by adding the words “as well as the conceptual vision as attached to the Mayor’s report dated December 10, 2024 titled “Civic Core District Development Conceptual Vision” after the words “Civic Core District Concept Plan Options”.",
       "result": "defeated",
       "source": {
@@ -3831,7 +3843,7 @@
     {
       "id": "2025-01-20-1",
       "date": "2025-01-20",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council EXTENDS the Regular Council Budget Meeting from 10:00 p.m. to 11:00 p.m.",
       "result": "defeated",
       "source": {
@@ -3861,7 +3873,7 @@
     {
       "id": "2025-01-22-1",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the Contingency line item on page 133 of the 2025 – 2029 Operational Financial Plan by reducing it by $95,000.",
       "result": "carried",
       "source": {
@@ -3887,7 +3899,7 @@
     {
       "id": "2025-01-22-2",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the Council Contingency line item within the 2025 – 2029 Operational Financial Plan from $75,000 to $50,000.",
       "result": "carried",
       "source": {
@@ -3913,7 +3925,7 @@
     {
       "id": "2025-01-22-3",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "community",
       "title": "That Council AMENDS the 2025 - 2029 Capital Plan attached to the Staff Report dated January 10, 2025 from the Director of Finance and IT Services titled \"2025 - 2029 Capital Plan\" by deferring Capital Project #0302 – “Memorial Park Cemetery Upgrade” to the 2026 Capital Plan.",
       "result": "defeated",
       "source": {
@@ -3944,7 +3956,7 @@
     {
       "id": "2025-01-22-4",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council AMENDS the 2025 - 2029 Capital Plan attached to the Staff Report dated January 10, 2025 from the Director of Finance and IT Services titled \"2025 - 2029 Capital Plan\" by reducing Capital Project #0399 – “Road Rehabilitation” to $6,700,000.",
       "result": "defeated",
       "source": {
@@ -3974,7 +3986,7 @@
     {
       "id": "2025-01-22-5",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "other",
       "title": "That Council AMENDS the 2025 - 2029 Capital Plan attached to the Staff Report dated January 10, 2025 from the Director of Finance and IT Services titled \"2025 - 2029 Capital Plan\" by deferring Capital Project #3418 – “PG Conference and Civic Centre Door” to the 2026 Capital Plan.",
       "result": "defeated",
       "source": {
@@ -4006,7 +4018,7 @@
     {
       "id": "2025-01-22-6",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "other",
       "title": "That Council AMENDS the 2025 - 2029 Capital Plan attached to the Staff Report dated January 10, 2025 from the Director of Finance and IT Services titled \"2025 - 2029 Capital Plan\" by deferring Capital Project #3208 – “Janitorial Equip - Replace Floor Scrubbers” to the 2026 Capita",
       "result": "defeated",
       "source": {
@@ -4038,7 +4050,7 @@
     {
       "id": "2025-01-22-7",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "other",
       "title": "That Council AMENDS the 2025 - 2029 Capital Plan attached to the Staff Report dated January 10, 2025 from the Director of Finance and IT Services titled \"2025 - 2029 Capital Plan\" by deferring Capital Project #0431 – “Mobile Equipment Replacement” to the 2026 Capital Plan.",
       "result": "defeated",
       "source": {
@@ -4069,7 +4081,7 @@
     {
       "id": "2025-01-22-8",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "procedural",
       "title": "That Council REFERS a potential capital project regarding a storage building to house the Little Prince train to a Committee of the Whole meeting for further consideration.",
       "result": "carried",
       "source": {
@@ -4094,7 +4106,7 @@
     {
       "id": "2025-01-22-9",
       "date": "2025-01-22",
-      "category": "other",
+      "category": "community",
       "title": "That Council AMENDS the Library Services Service Category by changing the 2025 Proposed Revenue to (509,472) and changing the 2025 Proposed Expenses to $4,448,000, which represents at 2.25% increase to the Library contribution over 2024.",
       "result": "defeated",
       "source": {
@@ -4123,7 +4135,7 @@
     {
       "id": "2025-01-22-10",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to work with the Prince George Public Library to develop a 5-year funding agreement to better anticipate City of Prince George budget contributions.",
       "result": "carried",
       "source": {
@@ -4150,7 +4162,7 @@
     {
       "id": "2025-01-22-11",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the Mayor and Council Service Category by reallocating $2,000 from the Economic Development Advocacy expenditure line to each Councillor’s annual expenditure line item and $4,000 from the Economic Development Advocacy expenditure line to the Legislative – Mayo",
       "result": "carried",
       "source": {
@@ -4176,7 +4188,7 @@
     {
       "id": "2025-01-22-12",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "Minutes of the That Council AMENDS the Mayor and Council Service Category by eliminating $20,000 from the Economic Development Advocacy expenditure line item.",
       "result": "defeated",
       "source": {
@@ -4206,7 +4218,7 @@
     {
       "id": "2025-01-22-13",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the Mayor and Council Service Category by reallocating $2,000 from the Economic Development Advocacy expenditure line to each Councillor’s annual expenditure line item and $4,000 from the Economic Development Advocacy expenditure to the Legislative – Mayor exp",
       "result": "defeated",
       "source": {
@@ -4236,7 +4248,7 @@
     {
       "id": "2025-01-22-14",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Human Resources and Corporate Safety Service Category as outlined on pages 35 and 36 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda, with a reduction of $28,000 to the service categor",
       "result": "carried",
       "source": {
@@ -4264,7 +4276,7 @@
     {
       "id": "2025-01-22-15",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category as outlined on pages 42 and 43 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda, with a reduction of $123,000 to the service category.",
       "result": "defeated",
       "source": {
@@ -4294,7 +4306,7 @@
     {
       "id": "2025-01-22-16",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category as outlined on pages 42 and 43 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4321,7 +4333,7 @@
     {
       "id": "2025-01-22-17",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Bylaw Services Service Category as outlined on pages 44 and 45 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda, with a reduction of $210,000 to the service category to eliminate outrea",
       "result": "carried",
       "source": {
@@ -4349,7 +4361,7 @@
     {
       "id": "2025-01-22-18",
       "date": "2025-01-22",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing the number $500,000 to $1,000,000.",
       "result": "carried",
       "source": {
@@ -4377,7 +4389,7 @@
     {
       "id": "2025-01-22-19",
       "date": "2025-01-22",
-      "category": "governance",
+      "category": "infrastructure",
       "title": "That Council DIRECTS Administration to return the Snow and Ice Control Policy to Council for review.",
       "result": "carried",
       "source": {
@@ -4403,7 +4415,7 @@
     {
       "id": "2025-01-22-20",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the main motion by adding the words “, with a reduction of $16,195.50 to the service category” following the words “Council Budget Meeting agenda”.",
       "result": "defeated",
       "source": {
@@ -4432,7 +4444,7 @@
     {
       "id": "2025-01-22-21",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Facility Maintenance Service Category as outlined on pages 94, 95, and 96 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda with a reduction of $95,000 to remove the IT renovation projec",
       "result": "defeated",
       "source": {
@@ -4462,7 +4474,7 @@
     {
       "id": "2025-01-22-22",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Facility Maintenance Service Category as outlined on pages 94, 95, and 96 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda with a reduction of $78,000 to remove the demolition of the de",
       "result": "defeated",
       "source": {
@@ -4491,7 +4503,7 @@
     {
       "id": "2025-01-22-23",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the addition of a Cellblock Guard position ($96,785) as outlined in the Police Protection Enhancement presented on pages 120 and 121 of the 2025 – 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4518,7 +4530,7 @@
     {
       "id": "2025-01-22-24",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the addition of a Victim Services Worker position ($92,116) as outlined in the Police Protection Enhancement presented on pages 120 and 121 of the 2025 – 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "defeated",
       "source": {
@@ -4548,7 +4560,7 @@
     {
       "id": "2025-01-22-25",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES increasing theC contracted strength of RCMP positions from 153 to 157 as outlined on the Police Protection – RCMP Service Enhancement presented in the handout package distributed at the January 20, 2025 Regular Council Budget meeting, with the four RCMP memb",
       "result": "carried",
       "source": {
@@ -4575,7 +4587,7 @@
     {
       "id": "2025-01-22-26",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Fire and Rescue Service Enhancement as outlined on pages 123 and 124 of the 2025 – 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4602,7 +4614,7 @@
     {
       "id": "2025-01-22-27",
       "date": "2025-01-22",
-      "category": "governance",
+      "category": "safety",
       "title": "That Council APPROVES the addition of two (2) additional Bylaw 1 Officers as described on the Bylaw Service Enhancement attached to the January 22, 2025 Regular Council meeting agenda.",
       "result": "defeated",
       "source": {
@@ -4633,7 +4645,7 @@
     {
       "id": "2025-01-22-28",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Communications Service Enhancement as outlined on page 126 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4660,7 +4672,7 @@
     {
       "id": "2025-01-22-29",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "community",
       "title": "That Council APPROVES the Parks Service Enhancement - Recreation as outlined on pages 127 and 128 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4685,7 +4697,7 @@
     {
       "id": "2025-01-22-30",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "community",
       "title": "That Council APPROVES the Parks Service Enhancement - Arborists as outlined on pages 129 and 130 of the 2025 - 2029 Operational Financial Minutes of the Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4710,7 +4722,7 @@
     {
       "id": "2025-01-22-31",
       "date": "2025-01-22",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Development Planning and Admin Service Enhancement as outlined on page 131 of the 2025 - 2029 Operational Financial Plan, attached to the January 22, 2025 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -4737,7 +4749,7 @@
     {
       "id": "2025-02-03-1",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "housing",
       "title": "That Council DENIES Temporary Use Permit No. TU000098 for the property legally described as Lot 9, District Lot 2433, Cariboo District, Plan 9394, Except Plan 15765.",
       "result": "defeated",
       "source": {
@@ -4765,7 +4777,7 @@
     {
       "id": "2025-02-03-2",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "housing",
       "title": "That Council APPROVES a one-year Temporary Use Permit No. TU000098 for the property legally described as Lot 9, District Lot 2433, Cariboo District, Plan 9394, Except Plan 15765.",
       "result": "carried",
       "source": {
@@ -4792,7 +4804,7 @@
     {
       "id": "2025-02-03-3",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of \"City of Prince George Equipment Financing Bylaw No. 9532, 2025\".",
       "result": "carried",
       "source": {
@@ -4817,7 +4829,7 @@
     {
       "id": "2025-02-03-4",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "governance",
       "title": "That Council AUTHORIZES an alternative approval process in accordance with section 86 of the Community Charter be used for the purpose of seeking approval of the electors in relation to “City of Prince George Equipment Financing Bylaw No. 9532, 2025”.",
       "result": "carried",
       "source": {
@@ -4842,7 +4854,7 @@
     {
       "id": "2025-02-03-5",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES Elector Response Form for City Of Prince George Equipment Financing Bylaw No. 9532, 2025 as attached to report dated January 27, 2025 titled “2025 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options.”",
       "result": "carried",
       "source": {
@@ -4867,7 +4879,7 @@
     {
       "id": "2025-02-03-6",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council GIVES FIRST THREE READINGS of \"Stormwater System Renewal Loan Authorization Bylaw No. 9533, 2025\".",
       "result": "carried",
       "source": {
@@ -4892,7 +4904,7 @@
     {
       "id": "2025-02-03-7",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council AUTHORIZES subject to obtaining statutory approval from the Inspector of Municipalities for Stormwater System Renewal Loan Authorization Bylaw No. 9533, 2025, an alternative approval process in accordance with section 86 of the Community Charter be used for the purpo",
       "result": "carried",
       "source": {
@@ -4917,7 +4929,7 @@
     {
       "id": "2025-02-03-8",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council AUTHORIZES Elector Response Form for Stormwater System Renewal Loan Authorization Bylaw No. 9533, 2025 as attached to report dated January 27, 2025 titled “2025 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options.”",
       "result": "carried",
       "source": {
@@ -4942,7 +4954,7 @@
     {
       "id": "2025-02-03-9",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "budget",
       "title": "751164 That Council GIVES FIRST THREE READINGS of \"Civic Centre BAS & Chiller Renewal Loan Authorization Bylaw No. 9534, 2025\".",
       "result": "carried",
       "source": {
@@ -4967,7 +4979,7 @@
     {
       "id": "2025-02-03-10",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES subject to obtaining statutory approval from the Inspector of Municipalities for Civic Centre BAS & Chiller Renewal Loan Authorization Bylaw No. 9534, 2025, an alternative approval process in accordance with section 86 of the Community Charter be used for ",
       "result": "carried",
       "source": {
@@ -4993,7 +5005,7 @@
     {
       "id": "2025-02-03-11",
       "date": "2025-02-03",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES Elector Response Form for Civic Centre BAS & Chiller Renewal Loan Authorization Bylaw No. 9534, 2025 as attached to report dated January 27, 2025 titled “2025 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options.”",
       "result": "carried",
       "source": {
@@ -5093,7 +5105,7 @@
     {
       "id": "2025-02-03-15",
       "date": "2025-02-03",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS Administration to prepare a report highlighting opportunities to improve the City of Prince George's procurement practices, with considerations given to the correspondence dated January 7, 2025 from the ICBA, as well as the emerging \"social procurement\" pract",
       "result": "carried",
       "source": {
@@ -5120,7 +5132,7 @@
     {
       "id": "2025-02-03-16",
       "date": "2025-02-03",
-      "category": "finance",
+      "category": "budget",
       "title": "That the City of Prince George SUPPORTS Providence Living's grant application for the Northern Development Initiative Trust Northern Healthy Communities Fund in the amount of up to $500,000 to support facility and equipment needs for their new 200-bed long-term care home.",
       "result": "carried",
       "source": {
@@ -5145,7 +5157,7 @@
     {
       "id": "2025-02-03-17",
       "date": "2025-02-03",
-      "category": "finance",
+      "category": "budget",
       "title": "That the City of Prince George SUPPORTS the Providence Living's grant application to the Northern Development Initiative Trust Northern Healthy Communities Fund Capacity Building Grant in the amount of up to $300,000 in support of Providence Living’s development of a new 200-bed ",
       "result": "carried",
       "source": {
@@ -5170,7 +5182,7 @@
     {
       "id": "2025-02-03-18",
       "date": "2025-02-03",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council POSTPONES consideration of agenda items E.2 and E.3 to a regular council meeting in March 2025.",
       "result": "defeated",
       "source": {
@@ -5328,7 +5340,7 @@
     {
       "id": "2025-02-24-3",
       "date": "2025-02-24",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing the word “a” to “the May 5, 2025 Regular” immediately before “Council meeting”.",
       "result": "defeated",
       "source": {
@@ -5383,7 +5395,7 @@
     {
       "id": "2025-02-24-5",
       "date": "2025-02-24",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council APPROVES the following public consultation process to fulfill the requirements of Section 475 of the Local Government Act: a. Publish notification of public consultation in accordance with the “City of Prince George Public Notice Bylaw No. 9329, 2022”.",
       "result": "carried",
       "source": {
@@ -5436,7 +5448,7 @@
     {
       "id": "2025-02-24-7",
       "date": "2025-02-24",
-      "category": "finance",
+      "category": "community",
       "title": "That Council APPROVE the addition of the capital project “Lheidli T’enneh Memorial Park Playground Renewal” to the financial plan for a budget of $3,000,000 with funding from the Endowment Fund Reserve as detailed in the report dated February 11, 2025 from the Director of Civic O",
       "result": "carried",
       "source": {
@@ -5461,7 +5473,7 @@
     {
       "id": "2025-02-24-8",
       "date": "2025-02-24",
-      "category": "other",
+      "category": "housing",
       "title": "That Council APPROVES a two-year Temporary Use Permit No. TU000103 for the property legally described as Lot 68, District Lot 2611, Cariboo District, Plan 27420.",
       "result": "carried",
       "source": {
@@ -5513,7 +5525,7 @@
     {
       "id": "2025-02-24-10",
       "date": "2025-02-24",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Tree Protection Bylaw No. 6343, 1995, Amendment Bylaw No. 9529, 2025.”",
       "result": "carried",
       "source": {
@@ -5620,7 +5632,7 @@
     {
       "id": "2025-04-07-1",
       "date": "2025-04-07",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council REFERS to the 2026 Budget, recommendation 3 as described in the report dated March 28, 2025 from the City Manager titled \"Review of Committee Recommendations to Improve Bear Awareness.\"",
       "result": "carried",
       "source": {
@@ -5645,7 +5657,7 @@
     {
       "id": "2025-04-07-2",
       "date": "2025-04-07",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of \"City of Prince George 5-Year Operating and Capital Financial Plans Bylaw No. 9538, 2025\".",
       "result": "carried",
       "source": {
@@ -5748,7 +5760,7 @@
     {
       "id": "2025-04-09-4",
       "date": "2025-04-09",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing the words “Tuesday, April 15” to “Wednesday, April 16”.",
       "result": "carried",
       "source": {
@@ -5830,7 +5842,7 @@
     {
       "id": "2025-04-16-3",
       "date": "2025-04-16",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by adding the words “and mitigation” immediately following the words “change adaptation”.",
       "result": "carried",
       "source": {
@@ -5855,7 +5867,7 @@
     {
       "id": "2025-04-16-4",
       "date": "2025-04-16",
-      "category": "housing",
+      "category": "community",
       "title": "That Council DIRECTS Administration to return a report to Council outlining the consequences and options of removing Moore’s Meadow in its entirety, including the city- owned property current zoned AF: Agriculture and Forestry at the north end of the meadow. Special Council Meeti",
       "result": "carried",
       "source": {
@@ -5880,7 +5892,7 @@
     {
       "id": "2025-04-16-5",
       "date": "2025-04-16",
-      "category": "housing",
+      "category": "governance",
       "title": "That Council DIRECTS Administration to return a report to Council on consequences and options regarding the incorporation of strategic flexibility for development outside the Urban Containment Boundary which includes: • Creating policy and evaluation criteria for strategic except",
       "result": "carried",
       "source": {
@@ -5936,7 +5948,7 @@
     {
       "id": "2025-04-16-7",
       "date": "2025-04-16",
-      "category": "housing",
+      "category": "other",
       "title": "To ensure that the Prince George Airport Authority’s role is more formally recognized and that the development around the airport reflects both the City's vision for growth and the operational needs of the airport, which is vital for the region’s future development, that Council ",
       "result": "carried",
       "source": {
@@ -6046,7 +6058,7 @@
     {
       "id": "2025-04-16-11",
       "date": "2025-04-16",
-      "category": "housing",
+      "category": "other",
       "title": "Councillor Frizzell declared a pecuniary conflict of interest as he is an instructor at both the College of New Caledonia and the University of Northern British Columbia, and is a Board Member at the Collect of New Caledonia, and exited Council Chambers at 8:34 p.m. That Council ",
       "result": "defeated",
       "source": {
@@ -6155,7 +6167,7 @@
     {
       "id": "2025-04-23-4",
       "date": "2025-04-23",
-      "category": "housing",
+      "category": "other",
       "title": "That Council: 1. CONFIRMS that its comments on the Liquor and Cannabis Regulation Branch’s prescribed considerations are as set out in the report dated March 26, 2025 from the Director of Planning and Development for Cannabis License Application No. CN000023; 2. CONFIRMS the meth",
       "result": "carried",
       "source": {
@@ -6205,7 +6217,7 @@
     {
       "id": "2025-05-26-2",
       "date": "2025-05-26",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council RECEIVES FOR INFORMATION the Certificates of Insufficiency attached as Appendices “A”, “B”, and “C” to the report dated May 20, 2025 from the Manager of Legislative Services/Corporate Officer titled “Results of Alternative Approval Process for Equipment Financing Byl",
       "result": "carried",
       "source": {
@@ -6230,7 +6242,7 @@
     {
       "id": "2025-05-26-3",
       "date": "2025-05-26",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Equipment Financing Bylaw No. 9532, 2025.”",
       "result": "carried",
       "source": {
@@ -6255,7 +6267,7 @@
     {
       "id": "2025-05-26-4",
       "date": "2025-05-26",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “Stormwater System Renewal Loan Authorization Bylaw No. 9533, 2025.”",
       "result": "carried",
       "source": {
@@ -6280,7 +6292,7 @@
     {
       "id": "2025-05-26-5",
       "date": "2025-05-26",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “Civic Centre BAS & Chiller Renewal Loan Authorization Bylaw No. 9534, 2025.”",
       "result": "carried",
       "source": {
@@ -6330,7 +6342,7 @@
     {
       "id": "2025-05-26-7",
       "date": "2025-05-26",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Water Regulations and Rates Bylaw No. 7479, 2003, Amendment Bylaw No. 9541, 2025.”",
       "result": "carried",
       "source": {
@@ -6355,7 +6367,7 @@
     {
       "id": "2025-06-09-1",
       "date": "2025-06-09",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the main motion by removing the words \", with a budget of up to $100,000 annually, funded from the 2026 communications budget\".",
       "result": "carried",
       "source": {
@@ -6383,7 +6395,7 @@
     {
       "id": "2025-06-09-2",
       "date": "2025-06-09",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AMENDS the main motion by removing the words \", redirecting funds to the Citizen and other Canadian media, in line with Council’s resolution\".",
       "result": "defeated",
       "source": {
@@ -6412,7 +6424,7 @@
     {
       "id": "2025-06-09-3",
       "date": "2025-06-09",
-      "category": "finance",
+      "category": "budget",
       "title": "That the Council of the City of Prince George directs the Chief Administrative Officer publish a transparency report by Q3 2026, detailing advertising expenditures by platform (e.g., Citizen, Meta, city website) and public notice reach (e.g., print vs. digital metrics), to be sha",
       "result": "carried",
       "source": {
@@ -6437,7 +6449,7 @@
     {
       "id": "2025-06-09-4",
       "date": "2025-06-09",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by replacing the words “simple majority vote of council members present” with the words “simple majority vote of all council members”.",
       "result": "carried",
       "source": {
@@ -6464,7 +6476,7 @@
     {
       "id": "2025-06-23-1",
       "date": "2025-06-23",
-      "category": "finance",
+      "category": "other",
       "title": "That Council DIRECTS Administration to return the 2024 Statement of Financial Information report to a closed meeting before the end of summer 2025.",
       "result": "carried",
       "source": {
@@ -6519,7 +6531,7 @@
     {
       "id": "2025-07-14-2",
       "date": "2025-07-14",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council DIRECTS Administration to conduct targeted engagement with the landowners of 505 4th Avenue, 2913 Silvercrest Road, 2000 Central Street, Cranbrook Hill Road (PID: 013-713-485), and 4729 Shamrock Road requesting their input, with the costs of the engagement to be paid",
       "result": "defeated",
       "source": {
@@ -6606,7 +6618,7 @@
     {
       "id": "2025-07-14-5",
       "date": "2025-07-14",
-      "category": "other",
+      "category": "community",
       "title": "That Council DIRECTS Administration to increase the number of Heritage Commission meetings from four (4) to seven (7) annually.",
       "result": "defeated",
       "source": {
@@ -6636,7 +6648,7 @@
     {
       "id": "2025-07-14-6",
       "date": "2025-07-14",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Indemnification Bylaw No. 8522, 2013, Amendment Bylaw No. 9562, 2025.”",
       "result": "carried",
       "source": {
@@ -6663,7 +6675,7 @@
     {
       "id": "2025-07-28-1",
       "date": "2025-07-28",
-      "category": "finance",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by removing the words “And, that Administration provides appropriate staff support and City resources to assist with planning and facilitation, and that any necessary costs associated with the city participating in the forum or coordinating rel",
       "result": "carried",
       "source": {
@@ -6690,7 +6702,7 @@
     {
       "id": "2025-07-28-2",
       "date": "2025-07-28",
-      "category": "governance",
+      "category": "infrastructure",
       "title": "That Council APPROVES option 2 – “Increased allowable snow levels on statutory holidays” as outlined in the report dated June 2, 2025 from the Director of Civic Operations, titled “Statutory Holidays – Snow and Ice Control Policy Amendment Options.”",
       "result": "defeated",
       "source": {
@@ -6717,7 +6729,7 @@
     {
       "id": "2025-07-28-3",
       "date": "2025-07-28",
-      "category": "governance",
+      "category": "infrastructure",
       "title": "That Council APPROVES option 3 – “Prioritizing priority 1 and 2 routes and decreasing service levels for priority 3 routes on statutory holidays” as outlined in the report dated June 2, 2025 from the Director of Civic Operations, titled “Statutory Holidays – Snow and Ice Control ",
       "result": "carried",
       "source": {
@@ -6768,7 +6780,7 @@
     {
       "id": "2025-07-28-5",
       "date": "2025-07-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Indemnification Bylaw No. 8522, 2013, Amendment Bylaw No. 9562, 2025.”",
       "result": "carried",
       "source": {
@@ -6794,7 +6806,7 @@
     {
       "id": "2025-09-03-1",
       "date": "2025-09-03",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council RECEIVES FOR INFORMATION the report dated August 27, 2025 from the Director of Administrative Services titled “Two Year Report on the Implementation of Defensive Force Options – Bylaw Services.”",
       "result": "carried",
       "source": {
@@ -6872,7 +6884,7 @@
     {
       "id": "2025-09-03-4",
       "date": "2025-09-03",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council REFERS the main motion to Administration for review and report back to Council.",
       "result": "carried",
       "source": {
@@ -6897,7 +6909,7 @@
     {
       "id": "2025-09-03-5",
       "date": "2025-09-03",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council REFERS the main motion to Administration for review and report back to Council.",
       "result": "carried",
       "source": {
@@ -6949,7 +6961,7 @@
     {
       "id": "2025-09-03-7",
       "date": "2025-09-03",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing the time of the public hearing from 7:00 p.m. to 6:00 p.m.",
       "result": "carried",
       "source": {
@@ -6976,7 +6988,7 @@
     {
       "id": "2025-09-17-1",
       "date": "2025-09-17",
-      "category": "other",
+      "category": "procedural",
       "title": "The Council AMENDS the main motion by adding the words “and DIRECTS Administration to explore alternative options and associated costs from the 2020 rendering for the Little Prince Storage.”",
       "result": "carried",
       "source": {
@@ -7001,7 +7013,7 @@
     {
       "id": "2025-09-17-2",
       "date": "2025-09-17",
-      "category": "other",
+      "category": "safety",
       "title": "That Council DIRECTS Administration to return a report on options for city-funded and/or other agency-funded washrooms at the temporary overnight shelter area.",
       "result": "defeated",
       "source": {
@@ -7057,7 +7069,7 @@
     {
       "id": "2025-09-17-4",
       "date": "2025-09-17",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council REFERS the main motion b) to Administration for review and further information.",
       "result": "carried",
       "source": {
@@ -7085,7 +7097,7 @@
     {
       "id": "2025-10-06-1",
       "date": "2025-10-06",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS Administration to implement option 1, to begin charging all properties the full funding level of $9M with an annual ERU of $169.07 as of January 1, 2027, as described in the report dated September 4, 2025, from the Director of Civic Operations, titled “Stormw",
       "result": "defeated",
       "source": {
@@ -7114,7 +7126,7 @@
     {
       "id": "2025-10-06-2",
       "date": "2025-10-06",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council DIRECTS Administration to implement option 3, to begin charging all properties on January 1, 2027 at less than the full funding level with phased increases over two years to reach the full funding level, as described in the report dated September 4, 2025, from the Di",
       "result": "carried",
       "source": {
@@ -7141,7 +7153,7 @@
     {
       "id": "2025-10-06-3",
       "date": "2025-10-06",
-      "category": "finance",
+      "category": "other",
       "title": "That Council DIRECTS Administration to submit an Expression of Interest to the Province by the October 15, 2025 deadline to host public live match viewings for the FIFA World Cup 2026, including details of the proposed plan and financial considerations, and that the outcome of th",
       "result": "carried",
       "source": {
@@ -7167,7 +7179,7 @@
     {
       "id": "2025-10-06-4",
       "date": "2025-10-06",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council: 1. APPROVES that Administration complete the application process for grant funding under UBCM’s Strategic Priorities Fund Capacity Building Stream for the creation of a Civic Facilities Master Plan; and AUTHORIZES the City’s Financial Officer and Director of Civic F",
       "result": "carried",
       "source": {
@@ -7243,7 +7255,7 @@
     {
       "id": "2025-11-03-1",
       "date": "2025-11-03",
-      "category": "other",
+      "category": "community",
       "title": "That Council DIRECTS Administration to return a report on options to avoid a two- year shutdown of the Aquatic Centre.",
       "result": "defeated",
       "source": {
@@ -7273,7 +7285,7 @@
     {
       "id": "2025-11-03-2",
       "date": "2025-11-03",
-      "category": "other",
+      "category": "community",
       "title": "That Council REQUESTS Councillor Frizzell, as Council’s representative on the Prince George Public Library Board, to convey Council’s message to the Board that it would like the Library to explore and pursue all opportunities to enhance its revenue generation.",
       "result": "carried",
       "source": {
@@ -7326,7 +7338,7 @@
     {
       "id": "2025-12-01-1",
       "date": "2025-12-01",
-      "category": "governance",
+      "category": "other",
       "title": "That Council CALLS the question of the main motion.",
       "result": "defeated",
       "source": {
@@ -7356,7 +7368,7 @@
     {
       "id": "2025-12-01-2",
       "date": "2025-12-01",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the addition of the capital project “CLP – Dive Platforms” to the financial plan for a budget of $36,200 with funding from the Northern Capital Planning Reserve Fund as detailed in the report dated December 1, 2025 from the Director of Civic Facilities and E",
       "result": "carried",
       "source": {
@@ -7382,7 +7394,7 @@
     {
       "id": "2025-12-01-3",
       "date": "2025-12-01",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Stormwater Utility Bylaw No. 9597, 2025”.",
       "result": "carried",
       "source": {
@@ -7408,7 +7420,7 @@
     {
       "id": "2025-12-01-4",
       "date": "2025-12-01",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Stormwater Reserve Bylaw No. 9598, 2025.",
       "result": "carried",
       "source": {
@@ -7433,7 +7445,7 @@
     {
       "id": "2025-12-01-5",
       "date": "2025-12-01",
-      "category": "finance",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Comprehensive Fees and Charges Bylaw No. 7557, 2004, Amendment Bylaw No. 9599, 2025”.",
       "result": "carried",
       "source": {
@@ -7534,7 +7546,7 @@
     {
       "id": "2025-12-01-9",
       "date": "2025-12-01",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council APPROVES Option 4: Mixed Approach, requiring writers of general correspondence to indicate whether they reside inside or outside City limits, and requiring only the street name for correspondence related to land-use matters.",
       "result": "carried",
       "source": {
@@ -7587,7 +7599,7 @@
     {
       "id": "2025-12-15-1",
       "date": "2025-12-15",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council REFERS discussion to Council budget deliberations in January 2026, to reallocate $16,000 from the existing Economic Development Advocacy budget to the Intergovernmental Relations budget to fund a delegation to Ottawa and a second delegation to Victoria for each membe",
       "result": "carried",
       "source": {
@@ -7614,7 +7626,7 @@
     {
       "id": "2026-01-12-1",
       "date": "2026-01-12",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council AMENDS “City of Prince George Stormwater Utility Bylaw No. 9597, 2025” by inserting new Section 6(1)(b) as follows and re-lettering subsequent subsections accordingly: “6(1)(b) All properties that are not in any way connected to any part of the Stormwater System, or ",
       "result": "carried",
       "source": {
@@ -7640,7 +7652,7 @@
     {
       "id": "2026-01-12-2",
       "date": "2026-01-12",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GIVES THIRD READING AS AMENDED of “City of Prince George Stormwater Utility Bylaw No. 9597, 2025.”",
       "result": "carried",
       "source": {
@@ -7667,7 +7679,7 @@
     {
       "id": "2026-01-12-3",
       "date": "2026-01-12",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council DIRECTS Administration to return an amendment to the \"City of Prince George Council Procedures Bylaw No. 8388, 2011, Amendment Bylaw No. 9601, 2025\" requiring a street name on all correspondence to Council.",
       "result": "carried",
       "source": {
@@ -7693,7 +7705,7 @@
     {
       "id": "2026-01-26-1",
       "date": "2026-01-26",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council EXTENDS the Regular Council Budget Meeting to 11:00 p.m.",
       "result": "carried",
       "source": {
@@ -7718,7 +7730,7 @@
     {
       "id": "2026-01-28-1",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "community",
       "title": "That Council AMENDS the 2026 – 2030 Funded Capital Plan attached to the Staff Report dated January 9, 2026, from the Director of Finance and IT Services titled “2026 – 2030 Capital Plan” by deferring Capital Project #3476 – Exhibition Park Utility Vehicle New to the 2027 Capital ",
       "result": "carried",
       "source": {
@@ -7743,7 +7755,7 @@
     {
       "id": "2026-01-28-2",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council AMENDS the 2026 – 2030 Funded Capital Plan attached to the Staff Report dated January 9, 2026, from the Director of Finance and IT Services titled “2026 – 2030 Capital Plan” by deferring Capital Project #3473 – Kin Centre Wi-Fi New to the 2027 Capital Plan.",
       "result": "carried",
       "source": {
@@ -7769,7 +7781,7 @@
     {
       "id": "2026-01-28-3",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Mayor and Council Service Category as outlined on pages 37 and 38 of the 2026 - 2030 Operational Financial Plan, attached to the January 28, 2026, Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -7795,7 +7807,7 @@
     {
       "id": "2026-01-28-4",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Legislative Services Service Category with a maximum budget of $1,042,716, representing a 1% budget savings, as set out on pages 39 and 40 of the 2026–2030 Operational Financial Plan, attached to the January 28, 2026, Regular Council Budget Meeting agend",
       "result": "carried",
       "source": {
@@ -7823,7 +7835,7 @@
     {
       "id": "2026-01-28-5",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Human Resources and Corporate Safety Service Category with a maximum budget of $2,775,927, reflecting the elimination of the Continuous Improvement budget line in the amount of $149,546, as set out on pages 41 and 42 of the 2026–2030 Operational Financia",
       "result": "carried",
       "source": {
@@ -7851,7 +7863,7 @@
     {
       "id": "2026-01-28-6",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council AMENDS the main motion by adding the following words immediately following the words “Budget Meeting agenda”: “1) Funding a maximum of 129 RCMP members, creating an efficiency of $258,404; and 2) Using a part of the efficiency to hire two Digital Evidence Management ",
       "result": "defeated",
       "source": {
@@ -7881,7 +7893,7 @@
     {
       "id": "2026-01-28-7",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category with a maximum budget of $224,081, reflecting the consolidation of Emergency Programs management and service delivery under the leadership of Prince George Fire Rescue, as set out on pages 48 and 49 of the 2026–2030 Op",
       "result": "defeated",
       "source": {
@@ -7911,7 +7923,7 @@
     {
       "id": "2026-01-28-8",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the Emergency Programs Service Category as outlined on pages 48 and 49 of the 2026–2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -7938,7 +7950,7 @@
     {
       "id": "2026-01-28-9",
       "date": "2026-01-28",
-      "category": "governance",
+      "category": "other",
       "title": "That Council AMENDS the agenda by considering agenda items M.2 and M.3 immediately following agenda item H.3.",
       "result": "carried",
       "source": {
@@ -7966,7 +7978,7 @@
     {
       "id": "2026-01-28-10",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council APPROVES the addition of one Relief Firefighter position for Prince George Fire Rescue, bringing the relief complement to the maximum permitted under Article 6.17 of the IAFF Collective Agreement, and that the 2026 Financial Plan be updated to include the associated ",
       "result": "carried",
       "source": {
@@ -8020,7 +8032,7 @@
     {
       "id": "2026-01-28-12",
       "date": "2026-01-28",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing “$10,000,000” to “$9,800,000”.",
       "result": "carried",
       "source": {
@@ -8047,7 +8059,7 @@
     {
       "id": "2026-01-28-13",
       "date": "2026-01-28",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council AMENDS the main motion by reducing the Roads Service Category by 1% through operational efficiencies.",
       "result": "defeated",
       "source": {
@@ -8079,7 +8091,7 @@
     {
       "id": "2026-01-28-14",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Storm Drainage Service Category as outlined on pages 63, 64, and 65 of the 2026 - 2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -8104,7 +8116,7 @@
     {
       "id": "2026-01-28-15",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the Fleet Services Service Category as outlined on pages 66 and 67 of the 2026 - 2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -8129,7 +8141,7 @@
     {
       "id": "2026-01-28-16",
       "date": "2026-01-28",
-      "category": "other",
+      "category": "community",
       "title": "That Council DIRECTS Administration to undertake an internal Parks Maintenance Operational Review to identify service-level efficiencies or alternative operational approaches, with any savings realized to be reinvested back into Parks operations and improvements.",
       "result": "defeated",
       "source": {
@@ -8160,7 +8172,7 @@
     {
       "id": "2026-01-28-17",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the 2026 IT Services Service Category with a maximum budget of $5,709,041, reflecting a 1% efficiency adjustment, as set out on pages 118 and 119 of the 2026 – 2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting a",
       "result": "defeated",
       "source": {
@@ -8191,7 +8203,7 @@
     {
       "id": "2026-01-28-18",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council APPROVES the 2026 IT Services Service Category with a reduction of $8000, as set out on pages 118 and 119 of the 2026 – 2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting agenda.",
       "result": "carried",
       "source": {
@@ -8218,7 +8230,7 @@
     {
       "id": "2026-01-28-19",
       "date": "2026-01-28",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council REFERS the \"Human Resources Service Enhancement - Recruitment and Retention Advisor\" as outlined on pages 122 and 123 of the 2026 - 2030 Operational Financial Plan, attached to the January 28, 2026 Regular Council Budget Meeting agenda to the 2027 budget.",
       "result": "carried",
       "source": {
@@ -8243,7 +8255,7 @@
     {
       "id": "2026-02-02-1",
       "date": "2026-02-02",
-      "category": "governance",
+      "category": "budget",
       "title": "That Council RECEIVES FOR INFORMATION the report dated January 2, 2026 from the Advisory Committee on Council Remuneration, titled “Proposed Amendments to City of Prince George Council Remuneration Bylaw No. 8414, 2012”.",
       "result": "carried",
       "source": {
@@ -8268,7 +8280,7 @@
     {
       "id": "2026-02-02-2",
       "date": "2026-02-02",
-      "category": "other",
+      "category": "procedural",
       "title": "That Council AMENDS the main motion by changing the words “Q3 2026” to “Q4 2026”.",
       "result": "carried",
       "source": {
@@ -8293,7 +8305,7 @@
     {
       "id": "2026-02-02-3",
       "date": "2026-02-02",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Stormwater Utility Bylaw No. 9597, 2025.\"",
       "result": "carried",
       "source": {
@@ -8318,7 +8330,7 @@
     {
       "id": "2026-02-02-4",
       "date": "2026-02-02",
-      "category": "finance",
+      "category": "infrastructure",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Stormwater Reserve Fund Bylaw No. 9598, 2025.\"",
       "result": "carried",
       "source": {
@@ -8343,7 +8355,7 @@
     {
       "id": "2026-02-02-5",
       "date": "2026-02-02",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “City of Prince George Comprehensive Fees and Charges Bylaw No. 7557, 2004, Amendment Bylaw No. 9599, 2025.\"",
       "result": "carried",
       "source": {
@@ -8394,7 +8406,7 @@
     {
       "id": "2026-02-23-2",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "governance",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Equipment Financing Bylaw No. 9607, 2026”.",
       "result": "carried",
       "source": {
@@ -8419,7 +8431,7 @@
     {
       "id": "2026-02-23-3",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "governance",
       "title": "That Council AUTHORIZES an alternative approval process in accordance with section 86 of the Community Charter be used for the purpose of seeking approval of the electors in relation to “City of Prince George Equipment Financing Bylaw No. 9607, 2026”.",
       "result": "carried",
       "source": {
@@ -8444,7 +8456,7 @@
     {
       "id": "2026-02-23-4",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES Elector Response Form for “City of Prince George Equipment Financing Bylaw No. 9607, 2026”, as attached to report dated January 28, 2026, titled “2026 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options”.",
       "result": "carried",
       "source": {
@@ -8469,7 +8481,7 @@
     {
       "id": "2026-02-23-5",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council GIVES FIRST THREE READINGS of “Stormwater System Renewal Loan Authorization Bylaw No. 9608, 2026”.",
       "result": "carried",
       "source": {
@@ -8494,7 +8506,7 @@
     {
       "id": "2026-02-23-6",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council AUTHORIZES, subject to obtaining statutory approval from the Inspector of Municipalities for \"Stormwater System Renewal Loan Authorization Bylaw No. 9608, 2026\", an alternative approval process in accordance with section 86 of the Community Charter be used for the pu",
       "result": "carried",
       "source": {
@@ -8519,7 +8531,7 @@
     {
       "id": "2026-02-23-7",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "infrastructure",
       "title": "That Council AUTHORIZES Elector Response Form for \"Stormwater System Renewal Loan Authorization Bylaw No. 9608, 2026\", as attached to report dated January 28, 2026 titled “2026 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options”.",
       "result": "carried",
       "source": {
@@ -8544,7 +8556,7 @@
     {
       "id": "2026-02-23-8",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of “CN Centre Building Envelope Renewal Loan Authorization Bylaw No. 9609, 2026”.",
       "result": "carried",
       "source": {
@@ -8570,7 +8582,7 @@
     {
       "id": "2026-02-23-9",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES, subject to obtaining statutory approval from the Inspector of Municipalities for \"CN Centre Building Envelope Renewal Loan Authorization Bylaw No. 9609, 2026\", an alternative approval process in accordance with section 86 of the Community Charter be used ",
       "result": "carried",
       "source": {
@@ -8596,7 +8608,7 @@
     {
       "id": "2026-02-23-10",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES Elector Response Form for \"CN Centre Building Envelope Renewal Loan Authorization Bylaw No. 9609, 2026\", as attached to report dated January 28, 2026, titled “2026 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options”.",
       "result": "carried",
       "source": {
@@ -8622,7 +8634,7 @@
     {
       "id": "2026-02-23-11",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "community",
       "title": "That Council GIVES FIRST THREE READINGS of “Memorial Park Cemetery Expansion Loan Authorization Bylaw No. 9610, 2026”.",
       "result": "carried",
       "source": {
@@ -8647,7 +8659,7 @@
     {
       "id": "2026-02-23-12",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "community",
       "title": "That Council AUTHORIZES, subject to obtaining statutory approval from the Inspector of Municipalities for \"Memorial Park Cemetery Expansion Loan Authorization Bylaw No. 9610, 2026\", an alternative approval process in accordance with section 86 of the Community Charter be used for",
       "result": "carried",
       "source": {
@@ -8672,7 +8684,7 @@
     {
       "id": "2026-02-23-13",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "community",
       "title": "That Council AUTHORIZES Elector Response Form for \"Memorial Park Cemetery Expansion Loan Authorization Bylaw No. 9610, 2026\", as attached to report dated January 28, 2026 titled “2026 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options”.",
       "result": "carried",
       "source": {
@@ -8697,7 +8709,7 @@
     {
       "id": "2026-02-23-14",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of “Civic Facilities Roof Replacements Loan Authorization Bylaw No. 9611, 2026”.",
       "result": "carried",
       "source": {
@@ -8722,7 +8734,7 @@
     {
       "id": "2026-02-23-15",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES, subject to obtaining statutory approval from the Inspector of Municipalities for \"Civic Facilities Roof Replacements Loan Authorization Bylaw No. 9611, 2026\", an alternative approval process in accordance with section 86 of the Community Charter be used f",
       "result": "carried",
       "source": {
@@ -8747,7 +8759,7 @@
     {
       "id": "2026-02-23-16",
       "date": "2026-02-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council AUTHORIZES Elector Response Form for \"Civic Facilities Roof Replacements Loan Authorization Bylaw No. 9611, 2026\", as attached to report dated January 28, 2026, titled “2026 Loan Authorization, Equipment Financing Bylaw and Approval of the Electors’ Options”. 800044",
       "result": "carried",
       "source": {
@@ -8847,7 +8859,7 @@
     {
       "id": "2026-03-09-1",
       "date": "2026-03-09",
-      "category": "other",
+      "category": "community",
       "title": "That Council GIVES FIRST THREE READINGS to “Parks and Open Space Bylaw No. 7370, 2002, Amendment Bylaw No. 9620, 2026”.",
       "result": "carried",
       "source": {
@@ -8898,7 +8910,7 @@
     {
       "id": "2026-03-09-3",
       "date": "2026-03-09",
-      "category": "governance",
+      "category": "procedural",
       "title": "That Council REQUESTS the Mayor's Office, in collaboration with Administration, provides a letter in support of Cedar Core AI Inc's proposed Technology and Education Campus Development, as described in their correspondence dated March 9, 2026.",
       "result": "carried",
       "source": {
@@ -8923,7 +8935,7 @@
     {
       "id": "2026-03-23-1",
       "date": "2026-03-23",
-      "category": "other",
+      "category": "budget",
       "title": "That Council INSTRUCTS the Corporate Officer to advise Innovation, Science and Economic Development in writing that: a. TELUS Communications Inc. (TELUS) & Terrion GP Inc (Terrion) have satisfactorily completed their consultation with the City of Prince George; b. The City of Pri",
       "result": "carried",
       "source": {
@@ -8948,7 +8960,7 @@
     {
       "id": "2026-03-23-2",
       "date": "2026-03-23",
-      "category": "finance",
+      "category": "community",
       "title": "That Council GRANTS FINAL READING AND ADOPTION of “Parks and Open Space Bylaw No. 7370, 2002, Amendment Bylaw No. 9620, 2026\".",
       "result": "carried",
       "source": {
@@ -8974,7 +8986,7 @@
     {
       "id": "2026-04-13-1",
       "date": "2026-04-13",
-      "category": "finance",
+      "category": "safety",
       "title": "That Council DIRECTS Administration to proceed with Option 2, as outlined in the report dated March 9, 2026 from the Director of Administrative Services, titled “Downtown Prince George Public Washroom Survey – What We Heard Report”, and to report back to Council with a preferred ",
       "result": "carried",
       "source": {
@@ -8999,7 +9011,7 @@
     {
       "id": "2026-04-27-1",
       "date": "2026-04-27",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George 5 – Year Operating and Capital Financial Plans Bylaw No. 9621, 2026”.",
       "result": "carried",
       "source": {
@@ -9025,7 +9037,7 @@
     {
       "id": "2026-04-27-2",
       "date": "2026-04-27",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council GIVES FIRST THREE READINGS of “City of Prince George Tax Rates Bylaw No. 9622, 2026”.",
       "result": "carried",
       "source": {
@@ -9051,7 +9063,7 @@
     {
       "id": "2026-05-25-1",
       "date": "2026-05-25",
-      "category": "finance",
+      "category": "budget",
       "title": "That Council POSTPONES consideration of the main motion until after the procurement process is complete.",
       "result": "defeated",
       "source": {
@@ -9080,7 +9092,7 @@
     {
       "id": "2026-05-25-2",
       "date": "2026-05-25",
-      "category": "finance",
+      "category": "community",
       "title": "That Council DIRECTS Administration to meet with stakeholders to develop plans and budget implications on the addition of a new “Arts and Culture” awards category to the Citizen Recognition Program, to present to Council well in advance of the next Citizen Recognition Program cyc",
       "result": "carried",
       "source": {
